@@ -1,0 +1,11 @@
+<p style="color:#.+?;">\n      <span>(.+?)</span> :\n      <span>\n        (.+?)\n      </span>\n    </p>
+
+to
+
+<div class="main">
+    <div class="ic"><img src="img/blank.png"></div>
+    <div class="p">
+        <b class="">$1</b><br>
+        $2
+    </div>
+</div>
