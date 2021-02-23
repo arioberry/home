@@ -9,3 +9,45 @@ to
         $2
     </div>
 </div>
+
+----
+
+<b class="">(GM|水無月灯|神籬詩乃歩|白百合クロネ|紫藤ユミ|『不登校の』紫藤ユミ|『元生徒会長の』赤崎ナナオ)
+
+        <p style="color:#ba7e39;">\s<span>(.+?)</span> :\s<span>(.+?)</span>\s</p>
+
+----
+
+<p style="color:#(.+?);">\n\s*<span>(.+?)</span> :\n\s*<span>\n\s*(.+?\n\s*.+\n\s*)</span>\n\s*</p>
+
+to
+
+<div class="box">
+        <p style="color:#$1;">
+            <span>$2</span> :
+            <span>
+                $3
+            </span>
+        </p></div>
+
+
+----
+
+<div class="main">\n\s*<div class="ic"><img src="img/blank.png"></div>\n\s*<div class="p">\n\s*<b class="">system</b><br>\n\s*(.+?)\n\s*</div>\n\s*</div>
+
+to
+
+</div>
+
+------
+
+改行を挟む
+
+」(\S+)\n\s*</div>
+
+to
+
+」<br>
+                $1
+            </div>
+---------

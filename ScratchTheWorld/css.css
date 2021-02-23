@@ -136,6 +136,16 @@
             display: block;
         }
 
+        a:link {
+            color:rgb(122, 122, 122);
+        }
+        a:visited {
+            color:rgb(122, 122, 122);
+        }
+        a:hover {
+            color: #b2d4ce;
+        }
+
 /*見出し*/
         .index_h1 {
             font-size: 20px;
