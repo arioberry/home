@@ -136,6 +136,7 @@
             display: block;
         }
 
+/*見出し*/
         .index_h1 {
             font-size: 20px;
             margin-bottom: 10px;
@@ -144,6 +145,12 @@
         .index_h2 {
             font-size:18px;
             margin-bottom:5px;
+        }
+
+        h2 {font-size:180%;
+        }
+
+        h3 {font-size:150%;
         }
 
         .list + .index_h2 {
@@ -155,6 +162,16 @@
             justify-content: center;
         }
 
+        .box {
+            padding: 5px 10px;
+                margin: 1.0em auto;
+            background: rgba(150, 150, 150, 0.2);
+              border: solid 1px #404980;/*線*/
+              border-radius: 10px;/*角の丸み*/
+            width: 80%;
+              box-shadow: 2px 2px 4px gray;
+        }
+        
         .gm {
             color: #888888;
         }
