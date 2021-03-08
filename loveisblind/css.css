@@ -68,8 +68,7 @@ background-size: 80.00px 80.00px;
         }
 
         .system {
-            color: #999;
-            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
         }
 
         .system + .system {
