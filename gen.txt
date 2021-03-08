@@ -51,3 +51,8 @@ to
                 $1
             </div>
 ---------
+<div class="main">\n\s*<div class="ic"><img src="img/.+?\.png"\n\s*alt="avatar"></div>\n\s*<div class="p">\n\s*<b class=".+\n\s*<.+\n\s*<.+
+空白消し
+
+-----
+
