@@ -105,6 +105,33 @@ background-size: 80.00px 80.00px;
            font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
         }
 
+        .box {
+            padding: 5px 10px;
+                margin: 1.0em auto;
+            background: rgba(150, 150, 150, 0.2);
+              border: solid 1px #404980;/*線*/
+              border-radius: 10px;/*角の丸み*/
+            width: 80%;
+              box-shadow: 2px 2px 4px gray;
+          }
+
+        .box2 {
+            padding: 10px 10px;
+                margin: 1.0em auto;
+            background: #f2e6ff;
+              border: solid 1px #615c66;/*線*/
+              border-radius: 10px;/*角の丸み*/
+            width: 80%;
+              box-shadow: 2px 2px 4px gray;
+        }
+
+        h2 {
+            font-size: 150%;
+        }
+
+        h3 {
+            font-size: 130%;
+        }
 
         img {
             max-width:100%;
@@ -158,7 +185,7 @@ background-size: 80.00px 80.00px;
         }
 
         .gm {
-            color: #888888;
+            color: #ffffff;
         }
 
         .rabbit {
