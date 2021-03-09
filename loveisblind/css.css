@@ -49,7 +49,7 @@
             position: fixed;
             background-color: rgb(68, 68, 68);
             background-image: linear-gradient(90deg, #fcd9cd 25%, #fac7c0 25%, #fac7c0 50%, #fcd9cd 50%, #fcd9cd 75%, #fac7c0 75%, #fac7c0 100%);
-background-size: 80.00px 80.00px;
+            background-size: 100.00px 100.00px;
         }
         ol, ul {
             padding: 10px;
@@ -75,7 +75,7 @@ background-size: 80.00px 80.00px;
             background:rgba(61, 41, 38, 0.87);
             max-width:700px;
             margin:auto;
-            padding:15px;
+            padding:20px 30px 40px;
             box-sizing:border-box;
             position: relative;
         }
@@ -95,6 +95,18 @@ background-size: 80.00px 80.00px;
         .ic img {
             max-width:60px;
         }
+
+        .Header {
+            position: fixed;	/* フッターを固定する */
+            top: 0;	/* 上部から配置の基準位置を決める */ 
+            left: 0;	/* 左から配置の基準位置を決める */ 
+            width: 300px;	/* フッターの横幅を指定する */
+            height: 4px;	/* フッターの高さを指定する */
+            padding:10px;	/* フッター内側の余白を指定する(上下左右) */  
+            padding-bottom:20px;	/* フッター内側の余白を指定する(上下左右) */  
+            background: linear-gradient(to right, #e91e63, rgba(233,30,99,0));/* フッターの背景色を指定する */
+            color: #fff;	/* フッターのフォントの色を指定する */
+        }	
 
         body {
            font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
@@ -118,12 +130,19 @@ background-size: 80.00px 80.00px;
             box-shadow: 2px 2px 4px gray;
         }
 
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+
         h2 {
             font-size: 200%;
             position: relative;
-            padding: 1rem;
-            margin: 1rem auto;
-            font-family: 'M PLUS Rounded 1c', sans-serif;
+            padding: 15px 10px;
+            margin: 10px auto;
           }
           
           h2:after {
@@ -141,12 +160,11 @@ background-size: 80.00px 80.00px;
           }
 
         h3 {
-            font-size: 130%;
+            font-size: 140%;
             border-bottom: 2px solid rgb(255, 255, 255);
-            padding: 0.5rem;
+            padding: 5px 10px;
             margin-top: auto;
-            margin-bottom: 1rem;
-            font-family: 'M PLUS Rounded 1c', sans-serif;
+            margin-bottom: 15px;
         }
 
         img {
