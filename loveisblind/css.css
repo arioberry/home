@@ -121,13 +121,11 @@
           }
 
         .box2 {
-            padding: 10px 10px;
+            padding: 20px 10px;
             margin: 1.0em auto;
-            background: #f2e6ff;
-            border: solid 1px #615c66;/*線*/
+            background: rgb(116, 72, 66);
             border-radius: 10px;/*角の丸み*/
             width: 80%;
-            box-shadow: 2px 2px 4px gray;
         }
 
         h1,
@@ -135,7 +133,8 @@
         h3,
         h4,
         h5,
-        .menu {
+        .menu,
+        .menu2 {
             font-family: 'M PLUS Rounded 1c', sans-serif;
         }
 
@@ -193,34 +192,20 @@
 
         .menu {
             font-size: 150%;
-            margin: 50px 100px;
+            margin: 40px auto;
             line-height: 200%;
-            background-color: #774746;
-            border: 3px dashed #fcd9cd;
-            border-radius: 8px;
-            box-shadow: 0 0 0 6px #774746;
-            color: #fff;
-            padding: 2em;
-            height: 60%;
         }
 
-        .menu > a {
+        .menu > a,
+        .menu2 > a {
             text-decoration: none;            
         }
 
-        .index_h1 {
-            font-size: 20px;
-            margin-bottom: 10px;
+        .menu2 {
+            font-size: 120%;
+            margin: 30px auto 30px;
         }
 
-        .index_h2 {
-            font-size:18px;
-            margin-bottom:5px;
-        }
-
-        .list + .index_h2 {
-            margin-top:20px;
-        }
 
         .list {
             display: flex;
