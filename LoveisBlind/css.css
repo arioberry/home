@@ -100,11 +100,11 @@
             position: fixed;	/* フッターを固定する */
             top: 0;	/* 上部から配置の基準位置を決める */ 
             left: 0;	/* 左から配置の基準位置を決める */ 
-            width: 300px;	/* フッターの横幅を指定する */
+            width: 250px;	/* フッターの横幅を指定する */
             height: 4px;	/* フッターの高さを指定する */
             padding:10px;	/* フッター内側の余白を指定する(上下左右) */  
             padding-bottom:20px;	/* フッター内側の余白を指定する(上下左右) */  
-            background: linear-gradient(to right, #e91e63, rgba(233,30,99,0));/* フッターの背景色を指定する */
+            background: #e91e63;/* フッターの背景色を指定する */
             color: #fff;	/* フッターのフォントの色を指定する */
         }	
 
@@ -220,7 +220,7 @@
         }
         a:hover {
             color: #fac7c0;
-            transition: color 0.7s
+            transition: color 0.5s
         }
         
         .gm {
