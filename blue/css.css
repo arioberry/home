@@ -122,7 +122,7 @@
         .box2 {
             padding: 20px 10px;
             margin: 40px auto;
-            background: rgb(116, 72, 66);
+            background: rgba(98, 224, 255, 0.5);
             border-radius: 10px;/*角の丸み*/
             width: 80%;
         }
@@ -134,8 +134,16 @@
         h5,
         .menu,
         .menu2 {
-            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-family: 'Kosugi', sans-serif;
         }
+
+        h1 {
+            font-size: 200%;
+            position: relative;
+            padding: 15px 10px;
+            margin: 10px auto;
+            color:rgb(98, 224, 255)
+          }
 
         h2 {
             font-size: 200%;
