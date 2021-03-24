@@ -101,23 +101,17 @@
             left: 0;	/* 左から配置の基準位置を決める */ 
             right:0;
             height:4px;	/* フッターの高さを指定する */
-            padding:15px 200px;	/* フッター内側の余白を指定する(上下左右) */  
-            padding-bottom:20px;	/* フッター内側の余白を指定する(上下左右) */  
+            padding-left: 30%;
+            padding-right: 30%;
+            padding-top: 5px;
+            padding-bottom:25px;	/* フッター内側の余白を指定する(上下左右) */  
             background: #3a7181;/* フッターの背景色を指定する */
             color: #fff;	/* フッターのフォントの色を指定する */
-            text-align: center;
+            display: flex;
+            justify-content: space-around;
         }
 
-        .prev {
-            position:absolute;left: 30%;
-        }
-
-        .top {
-            position: absolute;left:50%;right: 50%;
-        }
-
-        .next {
-            position: absolute;right: 30%;
+        .page {
         }
 
         body {
