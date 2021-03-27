@@ -170,7 +170,7 @@
           }
 
         h2 {
-            font-size: 200%;
+            font-size: 220%;
             position: relative;
             padding: 15px 10px;
             margin: 10px auto;
@@ -191,8 +191,16 @@
           }
 
         h3 {
-            font-size: 140%;
+            font-size: 160%;
             border-bottom: 2px solid rgb(255, 255, 255);
+            padding: 5px 10px;
+            margin-top: auto;
+            margin-bottom: 15px;
+        }
+
+        .day {
+            font-size: 140%;
+            border-left: 6px double rgb(255, 255, 255);
             padding: 5px 10px;
             margin-top: auto;
             margin-bottom: 15px;
