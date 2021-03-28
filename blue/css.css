@@ -47,7 +47,7 @@
             background-size: cover;
             height: 100%;
             position: fixed;
-            background-color: rgb(68, 68, 68);
+            background-color: rgb(29, 39, 49);
             background-size: 100.00px 100.00px;
         }
         ol, ul {
@@ -105,7 +105,7 @@
             padding-right: 20%;
             padding-top: 5px;
             padding-bottom:25px;	/* フッター内側の余白を指定する(上下左右) */  
-            background: #3a7181;/* フッターの背景色を指定する */
+            background: rgb(50, 140, 193);/* フッターの背景色を指定する */
             color: #fff;	/* フッターのフォントの色を指定する */
             display: flex;
             justify-content: space-around;
@@ -166,17 +166,28 @@
             position: relative;
             padding: 15px 10px;
             margin: 10px auto;
-            color:rgb(98, 224, 255)
+            color:rgb(50, 140, 193)
           }
 
         h2 {
-            font-size: 220%;
+            font-size: 200%;
+            position: relative;
+            padding: 10px 10px;
+            margin: 15px auto;
+            background-image: -webkit-gradient(linear, left top, right top, from(#0b3c5d), to(#328cc1));
+            background-image: -webkit-linear-gradient(left, #0b3c5d 0%, #328cc1 100%);
+            background-image: linear-gradient(to right, #0b3c5d 0%, #328cc1 100%);
+          }
+
+        h3 {
+            font-size: 160%;
             position: relative;
             padding: 15px 10px;
-            margin: 10px auto;
-          }
-          
-        h2:after {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3:after {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -190,20 +201,17 @@
             backface-visibility: hidden;
           }
 
-        h3 {
-            font-size: 160%;
-            border-bottom: 2px solid rgb(255, 255, 255);
-            padding: 5px 10px;
-            margin-top: auto;
-            margin-bottom: 15px;
-        }
-
         .day {
             font-size: 140%;
             border-left: 6px double rgb(255, 255, 255);
             padding: 5px 10px;
             margin-top: auto;
             margin-bottom: 15px;
+        }
+
+        hr {
+            border-top: 2px solid #fff;
+            width: 50%;
         }
 
         img {
@@ -271,7 +279,7 @@
             color:rgb(255, 255, 255)
         }
         a:hover {
-            color: #fac7c0;
+            color: #d9b310;
             transition: color 0.5s
         }
         
