@@ -112,6 +112,7 @@
         }
 
         .page {
+            font-weight: bold;
         }
 
         body {
@@ -124,7 +125,15 @@
             background: rgba(255, 236, 219, 0.2);
             border-radius: 10px;/*角の丸み*/
             width: 80%;
-          }
+        }
+
+        .box_t {
+            font-size: 110%;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
 
         .box2 {
             padding: 20px 10px;
@@ -173,7 +182,7 @@
             font-size: 200%;
             position: relative;
             padding: 10px 10px;
-            margin: 15px auto;
+            margin: 15px 0;
             background-image: -webkit-gradient(linear, left top, right top, from(#0b3c5d), to(#328cc1));
             background-image: -webkit-linear-gradient(left, #0b3c5d 0%, #328cc1 100%);
             background-image: linear-gradient(to right, #0b3c5d 0%, #328cc1 100%);
