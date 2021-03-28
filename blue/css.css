@@ -182,7 +182,7 @@
             font-size: 200%;
             position: relative;
             padding: 10px 10px;
-            margin: 15px 0;
+            margin: 15px auto;
             background-image: -webkit-gradient(linear, left top, right top, from(#0b3c5d), to(#328cc1));
             background-image: -webkit-linear-gradient(left, #0b3c5d 0%, #328cc1 100%);
             background-image: linear-gradient(to right, #0b3c5d 0%, #328cc1 100%);
