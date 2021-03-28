@@ -1,4 +1,4 @@
-<p style="color:#.+?;">\n      <span>(.+?)</span> :\n      <span>\n        (.+?)\n      </span>\n    </p>
+<p style="color:#.+?;">\n      <span>(.+?) :\n      <span>\n        (.+?)\n      \n    </p>
 
 to
 
@@ -14,20 +14,20 @@ to
 
 <b class="">(GM|水無月灯|神籬詩乃歩|白百合クロネ|紫藤ユミ|『不登校の』紫藤ユミ|『元生徒会長の』赤崎ナナオ)
 
-        <p style="color:#ba7e39;">\s<span>(.+?)</span> :\s<span>(.+?)</span>\s</p>
+        <p style="color:#ba7e39;">\s<span>(.+?) :\s<span>(.+?)\s</p>
 
 ----
 
-<p style="color:#(.+?);">\n\s*<span>(.+?)</span> :\n\s*<span>\n\s*(.+?\n\s*.+\n\s*)</span>\n\s*</p>
+<p style="color:#(.+?);">\n\s*<span>(.+?) :\n\s*<span>\n\s*(.+?\n\s*.+\n\s*)\n\s*</p>
 
 to
 
 <div class="box">
         <p style="color:#$1;">
-            <span>$2</span> :
+            <span>$2 :
             <span>
                 $3
-            </span>
+            
         </p></div>
 
 
