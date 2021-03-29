@@ -95,6 +95,10 @@
             max-width:60px;
         }
 
+        .box2 img {
+            max-width:40px;
+        }
+
         .footer {
             position: fixed;	/* フッターを固定する */
             bottom: 0;	/* 上部から配置の基準位置を決める */ 
@@ -136,9 +140,9 @@
 
 
         .box2 {
-            padding: 20px 10px;
-            margin: 40px auto;
-            background: rgba(98, 224, 255, 0.5);
+            padding: 10px 10px;
+            margin: 1.0em auto;
+            background: rgba(85, 169, 247, 0.2);
             border-radius: 10px;/*角の丸み*/
             width: 80%;
         }
