@@ -100,7 +100,7 @@
             bottom: 0;	/* 上部から配置の基準位置を決める */ 
             left: 0;	/* 左から配置の基準位置を決める */ 
             right:0;
-            height:4px;	/* フッターの高さを指定する */
+            height:0px;	/* フッターの高さを指定する */
             padding-left: 20%;
             padding-right: 20%;
             padding-top: 5px;
@@ -191,12 +191,21 @@
         h3 {
             font-size: 160%;
             position: relative;
-            padding: 15px 10px;
-            margin-top: 10px;
+            padding: 5px 10px;
+            margin-top: 50px;
             margin-bottom: 20px;
+            background: linear-gradient(transparent 60%, #0b3c5d 0%);
         }
 
-        h3:after {
+        h2 + h3 {
+            margin-top: 0;
+        }
+
+        .footer + h3 {
+            margin-top: 0;
+        }
+
+        h3:afte {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -211,7 +220,7 @@
           }
 
         .day {
-            font-size: 140%;
+            font-size: 120%;
             border-left: 6px double rgb(255, 255, 255);
             padding: 5px 10px;
             margin-top: auto;
@@ -219,7 +228,10 @@
         }
 
         hr {
-            border-top: 2px solid #fff;
+            border: 0 none ;
+            height: 2px;
+            color: rgb(75, 75, 75);
+            background-color: rgb(75, 75, 75);
             width: 50%;
         }
 
@@ -261,13 +273,26 @@
 
         .menu {
             font-size: 150%;
-            margin: 40px auto 30px;
-            line-height: 200%;
+            margin: 30px auto;
+            line-height: 140%;
         }
 
         .menu > a,
         .menu2 > a {
             text-decoration: none;            
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+            list-style-type: none
+        }
+
+        .list_link{
+            background: linear-gradient(transparent 60%, #0b3c5d 0%);
+            text-decoration: none;   
+            display: block;
+            margin: auto 5px;
         }
 
         .menu2 {
