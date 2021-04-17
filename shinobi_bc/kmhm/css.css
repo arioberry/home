@@ -322,21 +322,24 @@
         }
         
         .gm {
-            color: #ffffff;
+            color: #888888;
         }
 
-        .ririo {
-            color: #3f51b5;
+        .pc1 {
+            color: #ff5722;
         }
 
-        .koyomi {
-            color: #e68aa8;
+        .pc2 {
+            color: #afeeee;
         }
 
-        .yuki {
-            color: #ff9800;
+        .pc3 {
+            color: #ccbfb8;
         }
 
+        .pc4 {
+            color: #009688;
+        }
         @media screen and (min-width: 641px) {
 
         }
