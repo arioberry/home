@@ -1,6 +1,13 @@
-</div>\n\s+<div class="main">\n.+\n.+\n.+\n\s+(<b.+\n\s+.d6.+\n\s+.+)\n\s+</div>
+</div>\n\s+<div class="main">\n.+<img src="img/(.+)\n\s.+\n\s+.+\n\s+(<b.+\n\s+.d6.+\n\s+.+)\n\s+</div>
 
-
+        </div>
+        <div class="box">
+        <div class="main">
+            <div class="ic"><img src="img/$1.png"
+                    alt="avatar"></div>
+            <div class="p">
+                $2
+            </div></div>
 
 
 
