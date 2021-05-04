@@ -100,21 +100,6 @@
             max-width:40px;
         }
 
-        .footer {
-            position: fixed;	/* フッターを固定する */
-            color: rgb(255, 255, 255);
-            bottom: 0;	/* 上部から配置の基準位置を決める */ 
-            left: 0;	/* 左から配置の基準位置を決める */ 
-            right:0;
-            height:0px;	/* フッターの高さを指定する */
-            padding-left: 20%;
-            padding-right: 20%;
-            padding-top: 5px;
-            padding-bottom:25px;	/* フッター内側の余白を指定する(上下左右) */  
-            background: rgb(176, 142, 206);/* フッターの背景色を指定する */
-            display: flex;
-            justify-content: space-around;
-        }
 
         .page {
             font-weight: bold;
@@ -174,7 +159,7 @@
             position: relative;
             padding: 10px 10px;
             margin: 15px auto;
-            background: linear-gradient(transparent 0%, #c5747d 0%);
+            background-color:#c5747d;
           }
 
         h3 {
@@ -189,6 +174,23 @@
 
         h2 + h3 {
             margin-top: 0;
+        }
+
+        .footer {
+            position: fixed;	/* フッターを固定する */
+            color: rgb(255, 255, 255);
+            bottom: 0;	/* 上部から配置の基準位置を決める */ 
+            left: 0;	/* 左から配置の基準位置を決める */ 
+            right:0;
+            height:0px;	/* フッターの高さを指定する */
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 5px;
+            padding-bottom:25px;	/* フッター内側の余白を指定する(上下左右) */  
+            background: rgb(176, 142, 206);/* フッターの背景色を指定する */
+            display: flex;
+            justify-content: space-around;
+            z-index: 10;
         }
 
         .footer + h3 {
