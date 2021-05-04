@@ -48,8 +48,7 @@
             height: 100%;
             position: fixed;
             background: #fff;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to bottom, #894e8db0, #da6e53b0);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #894e8db0, #da6e53b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(180deg, rgba(137,78,141,0.6) 60%, rgba(218,110,83,0.6) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
         ol, ul {
             padding: 10px;
@@ -301,7 +300,7 @@
             color:rgb(71, 55, 85);
         }
         a:hover:not(.list_link) {
-            color: #d9b310;
+            color: #e9a272;
             transition: color 0.5s
         }
 
