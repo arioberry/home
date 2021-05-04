@@ -34,7 +34,7 @@
         body {
             line-height: 1.2;
             font-size:0.875rem;
-            color:#fff;
+            color:rgb(71, 55, 85);
             background:#ffffff;
         }
 
@@ -47,8 +47,9 @@
             background-size: cover;
             height: 100%;
             position: fixed;
-            background-color: rgb(29, 39, 49);
-            background-size: 100.00px 100.00px;
+            background: #fff;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #894e8db0, #da6e53b0);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #894e8db0, #da6e53b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
         ol, ul {
             padding: 10px;
@@ -67,11 +68,11 @@
         }
 
         .system {
-            color: rgb(255, 255, 255);
+            color: rgb(71, 55, 85);
         }
 
         .body {
-            background:rgba(0, 0, 0, 0.6);
+            background:rgb(255, 252, 249);
             max-width:800px;
             margin:auto;
             padding:20px 30px 60px;
@@ -101,6 +102,7 @@
 
         .footer {
             position: fixed;	/* フッターを固定する */
+            color: rgb(255, 255, 255);
             bottom: 0;	/* 上部から配置の基準位置を決める */ 
             left: 0;	/* 左から配置の基準位置を決める */ 
             right:0;
@@ -109,8 +111,7 @@
             padding-right: 20%;
             padding-top: 5px;
             padding-bottom:25px;	/* フッター内側の余白を指定する(上下左右) */  
-            background: rgb(50, 140, 193);/* フッターの背景色を指定する */
-            color: #fff;	/* フッターのフォントの色を指定する */
+            background: rgb(176, 142, 206);/* フッターの背景色を指定する */
             display: flex;
             justify-content: space-around;
         }
@@ -126,7 +127,7 @@
         .box , .system {
             padding: 10px 10px;
             margin: 1.0em auto;
-            background: rgba(255, 236, 219, 0.2);
+            background: rgba(71, 55, 53, 0.2);
             border-radius: 10px;/*角の丸み*/
             width: 80%;
         }
@@ -142,25 +143,10 @@
         .box2 {
             padding: 10px 10px;
             margin: 1.0em auto;
-            background: rgba(85, 169, 247, 0.2);
+            background: rgba(218,110,83, 0.2);
             border-radius: 10px;/*角の丸み*/
             width: 80%;
         }
-
-        .memo {
-            position: relative;
-            width: 60%;
-            margin: 50px auto;
-            padding: 50px 30px ;
-            color: #3f1919;/* 文字色 */
-            background-color: #e8ddbd; /*枠背景色*/
-            box-shadow: inset 0 0 40px rgb(146, 123, 92), 0 2px 2px #ccc;
-            transform: rotate( -2deg );
-            font-family: ro-san-std, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            line-height: 200%
-           }
 
         h1,
         h2,
@@ -169,9 +155,9 @@
         h5,
         .menu,
         .menu2 {
-            font-family: vdl-admin, sans-serif;
-            font-weight: 400;
-            font-style: normal;
+            font-family: fot-tsukuardgothic-std, sans-serif;
+            font-weight: 700;
+            font-style: normal;            
         }
 
         h1 {
@@ -184,12 +170,11 @@
 
         h2 {
             font-size: 200%;
+            color: #fff;
             position: relative;
             padding: 10px 10px;
             margin: 15px auto;
-            background-image: -webkit-gradient(linear, left top, right top, from(#0b3c5d), to(#328cc1));
-            background-image: -webkit-linear-gradient(left, #0b3c5d 0%, #328cc1 100%);
-            background-image: linear-gradient(to right, #0b3c5d 0%, #328cc1 100%);
+            background: linear-gradient(transparent 0%, #c5747d 0%);
           }
 
         h3 {
@@ -198,7 +183,8 @@
             padding: 5px 10px;
             margin-top: 50px;
             margin-bottom: 20px;
-            background: linear-gradient(transparent 60%, #0b3c5d 0%);
+            border-radius: 10px;
+            background: linear-gradient(transparent 0%, #f1c7cb 0%);
         }
 
         h2 + h3 {
@@ -209,23 +195,9 @@
             margin-top: 0;
         }
 
-        h3:afte {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 10px;
-            content: '';
-            background-image: -webkit-repeating-linear-gradient(135deg, #000, #000 1px, transparent 2px, transparent 5px);
-            background-image: repeating-linear-gradient(-45deg, rgb(255, 255, 255), rgb(255, 255, 255) 1px, transparent 2px, transparent 5px);
-            background-size: 7px 7px;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-          }
-
         .day {
             font-size: 120%;
-            border-left: 6px double rgb(255, 255, 255);
+            border-left: 6px double #d8a9ae;
             padding: 5px 10px;
             margin-top: auto;
             margin-bottom: 15px;
@@ -278,7 +250,7 @@
         .menu {
             font-size: 150%;
             margin: 30px auto;
-            line-height: 140%;
+            line-height: 100%;
         }
 
         .menu > a,
@@ -293,10 +265,20 @@
         }
 
         .list_link{
-            background: linear-gradient(transparent 60%, #0b3c5d 0%);
+            background-color: #b16f77;
+            color: #fff;
             text-decoration: none;   
             display: block;
-            margin: auto 5px;
+            margin: auto 5px 10px;
+            padding: 0.4rem 0.3rem;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all  0.3s ease;
+        }
+
+        .list_link:hover {
+            background-color: #b08ece;
         }
 
         .menu2 {
@@ -310,17 +292,26 @@
             justify-content: center;
         }
 
-        a:link {
-            color:rgb(255, 255, 255);
+        a:link:not(.list_link) {
+            color:rgb(71, 55, 85);
         }
-        a:visited {
-            color:rgb(255, 255, 255)
+        a:visited:not(.list_link) {
+            color:rgb(71, 55, 85);
         }
-        a:hover {
+        a:hover:not(.list_link) {
             color: #d9b310;
             transition: color 0.5s
         }
-        
+
+        .gm,.pc1,.pc3,.pc4 {
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+        }
+
+        .pc2 {
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.4),
+            2px 2px 3px rgba(0,0,0,0.2);
+        }
+
         .gm {
             color: #888888;
         }
@@ -334,7 +325,7 @@
         }
 
         .pc3 {
-            color: #ccbfb8;
+            color: #a39893;
         }
 
         .pc4 {
