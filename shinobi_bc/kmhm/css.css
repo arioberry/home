@@ -186,7 +186,7 @@
             padding-right: 20%;
             padding-top: 5px;
             padding-bottom:25px;	/* フッター内側の余白を指定する(上下左右) */  
-            background: rgb(176, 142, 206);/* フッターの背景色を指定する */
+            background: rgba(197,116,125,1);/* フッターの背景色を指定する */
             display: flex;
             justify-content: space-around;
             z-index: 10;
