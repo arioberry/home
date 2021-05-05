@@ -4,7 +4,7 @@
         <div class="box">
         <div class="main">
             <div class="ic"><img src="img/$1.png"
-                    alt="avatar"></div>
+                    alt=""></div>
             <div class="p">
                 $2
             </div></div>
@@ -65,7 +65,7 @@ to
                 $1
             </div>
 ---------
-<div class="main">\n\s*<div class="ic"><img src="img/.+?\.png"\n\s*alt="avatar"></div>\n\s*<div class="p">\n\s*<b class=".+\n\s*<.+\n\s*<.+
+<div class="main">\n\s*<div class="ic"><img src="img/.+?\.png"\n\s*alt=""></div>\n\s*<div class="p">\n\s*<b class=".+\n\s*<.+\n\s*<.+
 空白消し
 
 -----

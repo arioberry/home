@@ -270,7 +270,7 @@
             color: #fff;
             text-decoration: none;   
             display: block;
-            margin: -10px 5px 10px;
+            margin: auto 5px 10px;
             padding: 0.4rem 0.3rem;
             -webkit-transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
@@ -284,11 +284,7 @@
 
         .menu2 {
             font-size: 120%;
-            margin: 20px auto 20px;
-        }
-
-        .logo {
-            margin: auto auto 30px;
+            margin: 20px auto 30px;
         }
 
 
