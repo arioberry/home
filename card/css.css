@@ -95,10 +95,6 @@
             max-width:120px;
         }
 
-        .box2 img {
-            max-width:40px;
-        }
-
         .footer {
             position: fixed;	/* フッターを固定する */
             bottom: 0;	/* 上部から配置の基準位置を決める */ 
@@ -113,6 +109,7 @@
             color: #fff;	/* フッターのフォントの色を指定する */
             display: flex;
             justify-content: space-around;
+            z-index: 10;
         }
 
         .page {
@@ -131,47 +128,12 @@
             width: 80%;
         }
 
-        .box_t {
-            font-size: 110%;
-            margin-bottom: 10px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-
-        .box2 {
-            padding: 10px 10px;
-            margin: 1.0em auto;
-            background: rgba(85, 169, 247, 0.2);
-            border-radius: 10px;/*角の丸み*/
-            width: 80%;
-        }
-
-        .memo {
-            position: relative;
-            width: 60%;
-            margin: 50px auto;
-            padding: 50px 30px ;
-            color: #3f1919;/* 文字色 */
-            background-color: #e8ddbd; /*枠背景色*/
-            box-shadow: inset 0 0 40px rgb(146, 123, 92), 0 2px 2px #ccc;
-            transform: rotate( -2deg );
-            font-family: ro-san-std, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            line-height: 200%
-           }
-
         h1,
         h2,
         h3,
         h4,
-        h5,
-        .menu,
-        .menu2 {
-            font-family: vdl-admin, sans-serif;
-            font-weight: 400;
-            font-style: normal;
+        h5 {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
         }
 
         h1 {
@@ -187,10 +149,9 @@
             position: relative;
             padding: 10px 10px;
             margin: 15px auto;
-            background-image: -webkit-gradient(linear, left top, right top, from(#0b3c5d), to(#328cc1));
             background-image: -webkit-linear-gradient(left, #0b3c5d 0%, #328cc1 100%);
             background-image: linear-gradient(to right, #0b3c5d 0%, #328cc1 100%);
-          }
+        }
 
         h3 {
             font-size: 160%;
@@ -205,109 +166,13 @@
             margin-top: 0;
         }
 
-        .footer + h3 {
-            margin-top: 0;
-        }
-
-        h3:afte {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 10px;
-            content: '';
-            background-image: -webkit-repeating-linear-gradient(135deg, #000, #000 1px, transparent 2px, transparent 5px);
-            background-image: repeating-linear-gradient(-45deg, rgb(255, 255, 255), rgb(255, 255, 255) 1px, transparent 2px, transparent 5px);
-            background-size: 7px 7px;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-          }
-
-        .day {
-            font-size: 120%;
-            border-left: 6px double rgb(255, 255, 255);
-            padding: 5px 10px;
-            margin-top: auto;
-            margin-bottom: 15px;
-        }
-
-        hr {
-            border: 0 none ;
-            height: 2px;
-            color: rgb(75, 75, 75);
-            background-color: rgb(75, 75, 75);
-            width: 50%;
-        }
-
         img {
             max-width:100%;
             height:auto;
         }
 
-        .cutin {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            object-position: 0 25%;
-            margin-bottom: 20px;
-        }
-
-        .cutin:hover {
-            filter: brightness(120%) drop-shadow(0px 0px 5px rgba(26, 34, 51, 0.1));
-            transition: all 0.4s;
-        }
-
         b {
             font-weight:bold;
-        }
-
-        .index {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .index .body {
-            min-width: 70vw;
-            width:100%;
-            text-align: center;
-            padding:40px 15px;
-        }
-
-        .menu {
-            font-size: 150%;
-            margin: 30px auto;
-            line-height: 140%;
-        }
-
-        .menu > a,
-        .menu2 > a {
-            text-decoration: none;            
-        }
-
-        .list {
-            display: flex;
-            justify-content: center;
-            list-style-type: none
-        }
-
-        .list_link{
-            background: linear-gradient(transparent 60%, #0b3c5d 0%);
-            text-decoration: none;   
-            display: block;
-            margin: auto 5px;
-        }
-
-        .menu2 {
-            font-size: 120%;
-            margin: 20px auto 30px;
-        }
-
-
-        .list {
-            display: flex;
-            justify-content: center;
         }
 
         a:link {
