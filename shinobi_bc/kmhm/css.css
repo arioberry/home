@@ -172,7 +172,7 @@ body {
     /* 親に対して中央配置 */
     transform: translateX(-50%);
     /* 親に対して中央配置 */
-    bottom: -50px;
+    bottom: 20px;
     /* 親要素下からの位置 */
     display: inline-block;
     padding: 5px;
@@ -200,15 +200,6 @@ body {
     visibility: visible;
 }
 
-.tooltip-text:before {
-    content: '';
-    position: absolute;
-    top: -13px;
-    left: 50%;
-    margin-left: -7px;
-    border: 7px solid transparent;
-    border-bottom: 7px solid #333;
-}
 
 h1, h2, h3, h4, h5, .menu, .menu2 {
     font-family: fot-tsukuardgothic-std, sans-serif;
