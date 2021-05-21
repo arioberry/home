@@ -63,6 +63,17 @@ table {
     color: rgb(71, 55, 85);
 }
 
+@media screen and (max-width: 767px) {
+    .body {
+        background: rgb(255, 252, 249);
+        max-width: 800px;
+        margin: auto;
+        padding: 10px 10px 60px;
+        box-sizing: border-box;
+        position: relative;
+    }
+}
+
 .body {
     background: rgb(255, 252, 249);
     max-width: 800px;
@@ -84,8 +95,16 @@ table {
     margin-right: 15px;
 }
 
-.ic img {
-    max-width: 60px;
+@media screen and (max-width: 767px) {
+    .ic img {
+        max-width: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ic img {
+        max-width: 60px;
+    }
 }
 
 .box2 img {

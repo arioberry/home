@@ -63,13 +63,26 @@ table {
     color: rgb(71, 55, 85);
 }
 
-.body {
-    background: rgb(255, 252, 249);
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 30px 60px;
-    box-sizing: border-box;
-    position: relative;
+@media screen and (max-width: 767px) {
+    .body {
+        background: rgb(255, 252, 249);
+        max-width: 800px;
+        margin: auto;
+        padding: 10px 10px 60px;
+        box-sizing: border-box;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .body {
+        background: rgb(255, 252, 249);
+        max-width: 800px;
+        margin: auto;
+        padding: 20px 30px 60px;
+        box-sizing: border-box;
+        position: relative;
+    }
 }
 
 .main {
@@ -84,8 +97,16 @@ table {
     margin-right: 15px;
 }
 
-.ic img {
-    max-width: 60px;
+@media screen and (max-width: 767px) {
+    .ic img {
+        max-width: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ic img {
+        max-width: 60px;
+    }
 }
 
 .box2 img {
@@ -180,13 +201,13 @@ body {
 }
 
 .tooltip-text:before {
-	content: '';
-	position: absolute;
-	top: -13px;
-	left: 50%;
-	margin-left: -7px;
-	border: 7px solid transparent;
-	border-bottom: 7px solid #333;
+    content: '';
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    margin-left: -7px;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #333;
 }
 
 h1, h2, h3, h4, h5, .menu, .menu2 {
