@@ -93,24 +93,68 @@ table {
     margin-bottom: 15px;
 }
 
-.ic {
-    margin-right: 15px;
-}
-
 @media screen and (max-width: 767px) {
+    .ic {
+        margin-right: 10px;
+    }
     .ic img {
         max-width: 40px;
+    }
+    .box, .system {
+        padding: 10px 10px;
+        margin: 1.0em auto;
+        background: rgba(71, 55, 53, 0.2);
+        border-radius: 10px;
+        width: 90%;
+    }
+    .box_t {
+        font-size: 110%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .box2 {
+        padding: 10px 10px;
+        margin: 1.0em auto;
+        background: rgba(218, 110, 83, 0.2);
+        border-radius: 10px;
+        width: 90%;
+    }
+    .box img, .box2 img {
+        max-width: 30px;
     }
 }
 
 @media screen and (min-width: 768px) {
+    .ic {
+        margin-right: 15px;
+    }
     .ic img {
         max-width: 60px;
     }
-}
-
-.box2 img {
-    max-width: 40px;
+    .box, .system {
+        padding: 10px 10px;
+        margin: 1.0em auto;
+        background: rgba(71, 55, 53, 0.2);
+        border-radius: 10px;
+        width: 80%;
+    }
+    .box_t {
+        font-size: 110%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .box2 {
+        padding: 10px 10px;
+        margin: 1.0em auto;
+        background: rgba(218, 110, 83, 0.2);
+        border-radius: 10px;
+        width: 80%;
+    }
+    .box img, .box2 img {
+        max-width: 40px;
+    }
 }
 
 .page {
@@ -119,31 +163,6 @@ table {
 
 body {
     font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-}
-
-.box, .system {
-    padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(71, 55, 53, 0.2);
-    border-radius: 10px;
-    /*角の丸み*/
-    width: 80%;
-}
-
-.box_t {
-    font-size: 110%;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.box2 {
-    padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(218, 110, 83, 0.2);
-    border-radius: 10px;
-    /*角の丸み*/
-    width: 80%;
 }
 
 /*ツールチップ周り*/
@@ -280,7 +299,7 @@ h1 {
         border-radius: 10px;
         background: linear-gradient(transparent 0%, #f1c7cb 0%);
     }
-        .player {
+    .player {
         font-size: 120%;
         border-left: 6px double #d8a9ae;
         padding: 5px 10px;
@@ -299,20 +318,15 @@ h2+h3 {
 
 .footer {
     position: fixed;
-    /* フッターを固定する */
     color: rgb(255, 255, 255);
     bottom: 0;
-    /* 上部から配置の基準位置を決める */
     left: 0;
-    /* 左から配置の基準位置を決める */
     right: 0;
     height: 0px;
-    /* フッターの高さを指定する */
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 5px;
     padding-bottom: 25px;
-    /* フッター内側の余白を指定する(上下左右) */
     background: rgba(197, 116, 125, 1);
     /* フッターの背景色を指定する */
     display: flex;
