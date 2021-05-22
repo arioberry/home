@@ -235,26 +235,65 @@ h1 {
     color: rgb(50, 140, 193)
 }
 
-h2 {
-    font-size: 200%;
-    color: #fff;
-    position: relative;
-    padding: 10px 10px;
-    margin: 15px auto;
-    background-color: #c5747d;
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 140%;
+        color: #fff;
+        position: relative;
+        padding: 10px 10px;
+        margin: 15px auto;
+        background-color: #c5747d;
+    }
+    h3 {
+        font-size: 120%;
+        position: relative;
+        padding: 5px 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background: linear-gradient(transparent 0%, #f1c7cb 0%);
+    }
+    .player {
+        font-size: 110%;
+        border-left: 6px double #d8a9ae;
+        padding: 5px 10px;
+        margin-top: auto;
+        margin-bottom: 15px;
+    }
 }
 
-h3 {
-    font-size: 160%;
-    position: relative;
-    padding: 5px 10px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background: linear-gradient(transparent 0%, #f1c7cb 0%);
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 200%;
+        color: #fff;
+        position: relative;
+        padding: 10px 10px;
+        margin: 15px auto;
+        background-color: #c5747d;
+    }
+    h3 {
+        font-size: 160%;
+        position: relative;
+        padding: 5px 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background: linear-gradient(transparent 0%, #f1c7cb 0%);
+    }
+        .player {
+        font-size: 120%;
+        border-left: 6px double #d8a9ae;
+        padding: 5px 10px;
+        margin-top: auto;
+        margin-bottom: 15px;
+    }
 }
 
 h2+h3 {
+    margin-top: 0;
+}
+
+.footer+h3 {
     margin-top: 0;
 }
 
@@ -279,18 +318,6 @@ h2+h3 {
     display: flex;
     justify-content: space-around;
     z-index: 10;
-}
-
-.footer+h3 {
-    margin-top: 0;
-}
-
-.day {
-    font-size: 120%;
-    border-left: 6px double #d8a9ae;
-    padding: 5px 10px;
-    margin-top: auto;
-    margin-bottom: 15px;
 }
 
 hr {
