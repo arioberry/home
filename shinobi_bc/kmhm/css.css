@@ -199,6 +199,15 @@ body {
     opacity: 1;
     visibility: visible;
 }
+	
+.c-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: #ccc;
+}
 
 
 h1, h2, h3, h4, h5, .menu, .menu2 {
@@ -364,15 +373,15 @@ b {
     justify-content: center;
 }
 
-a:link:not(.list_link) {
+a:link:not(.list_link):not(.tooltip) {
     color: rgb(71, 55, 85);
 }
 
-a:visited:not(.list_link) {
+a:visited:not(.list_link):not(.tooltip) {
     color: rgb(71, 55, 85);
 }
 
-a:hover:not(.list_link) {
+a:hover:not(.list_link):not(.tooltip) {
     color: #e9a272;
     transition: color 0.5s
 }
