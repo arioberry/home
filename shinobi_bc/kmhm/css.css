@@ -72,6 +72,10 @@ table {
         box-sizing: border-box;
         position: relative;
     }
+    .koma {
+        max-width: 48px;
+        margin: 0 10px 30px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -82,6 +86,10 @@ table {
         padding: 20px 30px 60px;
         box-sizing: border-box;
         position: relative;
+    }
+    .koma {
+        max-width: 96px;
+        margin: 0 10px 30px;
     }
 }
 
@@ -165,7 +173,7 @@ body {
     font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
-/*ツールチップ周り*/
+/* ツールチップ周り */
 
 .tooltip {
     border-bottom: dotted 1px #FF0000;
@@ -238,7 +246,7 @@ body {
     }
 }
 
-/*ツールチップ周りここまで*/
+/* /ツールチップ周り */
 
 h1, h2, h3, h4, h5, .menu, .menu2 {
     font-family: fot-tsukuardgothic-std, sans-serif;
@@ -276,7 +284,7 @@ h1 {
         font-size: 110%;
         border-left: 6px double #d8a9ae;
         padding: 5px 10px;
-        margin-top: auto;
+        margin-top: 0;
         margin-bottom: 15px;
     }
 }
@@ -309,11 +317,15 @@ h1 {
 }
 
 h2+h3 {
-    margin-top: 0;
+    margin-top: -5px;
 }
 
 .footer+h3 {
-    margin-top: 0;
+    margin-top: 0px;
+}
+
+h3+.player {
+    margin-top: -10px;
 }
 
 .footer {
@@ -355,7 +367,7 @@ img {
     margin-bottom: 20px;
 }
 
-.cutin:hover {
+.cutin:hover, .koma:hover {
     filter: brightness(120%) drop-shadow(0px 0px 5px rgba(26, 34, 51, 0.1));
     transition: all 0.4s;
 }
