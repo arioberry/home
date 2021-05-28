@@ -59,8 +59,6 @@ table {
     border-spacing: 0;
 }
 
-
-
 /* index */
 
 @media screen and (max-width: 767px) {
@@ -75,6 +73,7 @@ table {
     .koma {
         max-width: 48px;
         margin: 0 10px 30px;
+        filter: drop-shadow(3px 3px 3px rgba(26, 34, 51, 0.2));
     }
     .logo {
         margin: auto auto 20px;
@@ -95,6 +94,7 @@ table {
     .koma {
         max-width: 96px;
         margin: 0 10px 30px;
+        filter: drop-shadow(5px 5px 5px rgba(26, 34, 51, 0.2));
     }
     .logo {
         margin: auto auto 30px;
