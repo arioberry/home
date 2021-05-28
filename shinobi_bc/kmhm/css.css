@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
         filter: drop-shadow(3px 3px 3px rgba(26, 34, 51, 0.2));
     }
     .logo {
-        margin: auto auto 20px;
+        margin: 15px auto 20px;
         max-width: 120px;
         max-height: auto;
     }
@@ -384,7 +384,7 @@ h3+.player {
     visibility: visible;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 768px) {
     .tooltip-text {
         display: flex;
         position: absolute;
@@ -399,7 +399,7 @@ h3+.player {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     .tooltip-text {
         display: block;
         background: #333;
