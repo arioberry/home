@@ -59,6 +59,12 @@ table {
     border-spacing: 0;
 }
 
+h1, h2, h3, h4, h5, .menu, .menu2, .type {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* index */
 
 @media screen and (max-width: 767px) {
@@ -80,6 +86,18 @@ table {
         max-width: 120px;
         max-height: auto;
     }
+    hr {
+        border: 0 none;
+        height: 2px;
+        color: rgb(154, 141, 156);
+        background-color: rgb(154, 141, 156);
+        width: 70%;
+    }
+    .type {
+        color: rgb(154, 141, 156);
+        font-size: 90%;
+        margin: 20px auto 20px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -97,9 +115,21 @@ table {
         filter: drop-shadow(5px 5px 5px rgba(26, 34, 51, 0.2));
     }
     .logo {
-        margin: auto auto 30px;
+        margin: 20px auto 30px;
         max-width: 100%;
         max-height: 100%;
+    }
+    hr {
+        border: 0 none;
+        height: 2px;
+        color: rgb(154, 141, 156);
+        background-color: rgb(154, 141, 156);
+        width: 50%;
+    }
+    .type {
+        color: rgb(154, 141, 156);
+        font-size: 120%;
+        margin: 20px auto 20px;
     }
 }
 
@@ -121,6 +151,11 @@ table {
     font-size: 150%;
     margin: 30px auto;
     line-height: 100%;
+}
+
+.menu2 {
+    font-size: 120%;
+    margin: 20px auto 20px;
 }
 
 .menu>a, .menu2>a {
@@ -150,9 +185,9 @@ table {
     background-color: #b08ece;
 }
 
-.menu2 {
-    font-size: 120%;
-    margin: 20px auto 20px;
+.credit {
+    color: rgb(154, 141, 156);
+    margin: 20px auto;
 }
 
 /* /index */
@@ -229,12 +264,6 @@ table {
     .box img, .box2 img {
         max-width: 40px;
     }
-}
-
-h1, h2, h3, h4, h5, .menu, .menu2 {
-    font-family: fot-tsukuardgothic-std, sans-serif;
-    font-weight: 700;
-    font-style: normal;
 }
 
 h1 {
@@ -421,14 +450,6 @@ body {
     font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
-hr {
-    border: 0 none;
-    height: 2px;
-    color: rgb(75, 75, 75);
-    background-color: rgb(75, 75, 75);
-    width: 50%;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -486,7 +507,7 @@ a:hover:not(.list_link):not(.tooltip) {
     color: #009688;
 }
 
-/* /name/ */
+/* /name */
 
 @media screen and (min-width: 641px) {}
 
