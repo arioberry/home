@@ -457,6 +457,7 @@ img {
 
 .cutin:hover, .koma:hover {
     filter: brightness(120%) drop-shadow(0px 0px 5px rgba(26, 34, 51, 0.1));
+    transform:translateY(-5px);
     transition: all 0.4s;
 }
 
