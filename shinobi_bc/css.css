@@ -379,19 +379,19 @@ a:hover:not(.list_link) {
 }
 
 .pc1 {
-    color: #ff5722;
+    color: #2196f3;
 }
 
 .pc2 {
-    color: #afeeee;
+    color: #4682b4;
 }
 
 .pc3 {
-    color: #a39893;
+    color: #7e2639;
 }
 
 .pc4 {
-    color: #009688;
+    color: #ec6d51;
 }
 
 @media screen and (min-width: 641px) {}
