@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 /* index */
 
 .body {
-    background: rgba(5, 7, 15, 0.8);
+    background: rgba(7, 5, 15, 0.8);
     max-width: 800px;
     margin: auto;
     box-sizing: border-box;
@@ -80,8 +80,17 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 hr {
     border: 0 none;
     height: 2px;
-    color: rgb(15, 109, 153);
-    background-color: rgb(15, 109, 153);
+    color: rgb(9, 47, 104);
+    background-color: rgb(9, 47, 104);
+}
+
+.type {
+    color: rgb(177, 183, 185);
+}
+
+.credit {
+    color: rgb(177, 183, 185);
+    margin: 20px auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -90,14 +99,13 @@ hr {
     }
     .logo {
         margin: 15px auto 20px;
-        max-width: 120px;
+        max-width: 200px;
         max-height: auto;
     }
     hr {
         width: 70%;
     }
     .type {
-        color: rgb(15, 109, 153);
         font-size: 90%;
         margin: 20px auto 20px;
     }
@@ -109,14 +117,13 @@ hr {
     }
     .logo {
         margin: 20px auto 30px;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 60%;
+        max-height: 60%;
     }
     hr {
         width: 50%;
     }
     .type {
-        color: rgb(15, 109, 153);
         font-size: 120%;
         margin: 20px auto 20px;
     }
@@ -158,7 +165,7 @@ hr {
 }
 
 .list_link {
-    background-color: rgba(15, 109, 153, 0.5);
+    background-color: rgb(27, 95, 196);
     color: #fff;
     text-decoration: none;
     display: block;
@@ -172,11 +179,6 @@ hr {
 
 .list_link:hover {
     background-color: rgb(180, 179, 172);
-}
-
-.credit {
-    color: rgb(15, 109, 153);
-    margin: 20px auto;
 }
 
 /* /index */
@@ -201,7 +203,7 @@ hr {
 .box2 {
     padding: 10px 10px;
     margin: 1.0em auto;
-    background: rgba(15, 109, 153, 0.3);
+    background: rgba(29, 66, 122, 0.3);
     border-radius: 10px;
 }
 
@@ -270,7 +272,7 @@ h2 {
     color: rgb(255, 255, 255);
     position: relative;
     padding: 10px 10px;
-    background-color: rgb(15, 109, 153);
+    background-color: rgb(27, 95, 196);
 }
 
 h3 {
@@ -279,13 +281,13 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background: rgba(15, 109, 153, 0.5);
+    background: rgb(9, 47, 104);
 }
 
 .player {
-    border-left: 6px double rgba(15, 109, 153, 0.5);
+    border-left: 6px double rgb(9, 47, 104);
     padding: 5px 10px;
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
@@ -304,11 +306,11 @@ h3 {
 
 @media screen and (min-width: 768px) {
     h2 {
-        font-size: 200%;
+        font-size: 180%;
         margin: 15px auto;
     }
     h3 {
-        font-size: 160%;
+        font-size: 140%;
     }
     .player {
         font-size: 120%;
@@ -455,11 +457,11 @@ b {
 /* リンク色 */
 
 a:link:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(26, 182, 255);
+    color: rgb(79, 170, 255);
 }
 
 a:visited:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(26, 182, 255);
+    color: rgb(79, 170, 255);
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
@@ -480,7 +482,7 @@ a:visited.page {
 }
 
 a:hover.page {
-    color: rgb(15, 109, 153);
+    color: rgb(27, 95, 196);
     transition: color 0.5s
 }
 
