@@ -22,7 +22,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     line-height: 1.2;
     font-size: 0.875rem;
-    color: #fff;
+    color: rgb(53, 51, 51);
     background: #ffffff;
 }
 
@@ -35,7 +35,9 @@ body {
     background-size: cover;
     height: 100%;
     position: fixed;
-    background: rgb(180, 179, 172);
+    background-image: url(img/back.png);
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 ol, ul {
@@ -67,8 +69,9 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 /* index */
 
 .body {
-    background: rgb(43, 44, 40);
+    background: rgb(240, 237, 235);
     max-width: 800px;
+    min-height: 1000px;
     margin: auto;
     box-sizing: border-box;
     position: relative;
@@ -87,8 +90,8 @@ hr {
     }
     .logo {
         margin: 15px auto 20px;
-        max-width: 120px;
-        max-height: auto;
+        max-width: 300px;
+        max-height: 250px;
     }
     hr {
         width: 70%;
@@ -106,8 +109,8 @@ hr {
     }
     .logo {
         margin: 20px auto 30px;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 60%;
+        max-height: 60%;
     }
     hr {
         width: 50%;
@@ -141,7 +144,7 @@ hr {
 
 .menu2 {
     font-size: 120%;
-    margin: 20px auto 20px;
+    margin: 40px auto 10px;
 }
 
 .menu>a, .menu2>a {
@@ -155,11 +158,11 @@ hr {
 }
 
 .list_link {
-    background-color: rgba(166, 159, 154, 0.5);
+    background-color: rgba(34, 20, 20, 0.5);
     color: #fff;
     text-decoration: none;
     display: block;
-    margin: -10px 5px 10px;
+    margin: -10px 5px 40px;
     padding: 0.4rem 0.3rem;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -172,7 +175,7 @@ hr {
 }
 
 .credit {
-    color: rgb(166, 159, 154);
+    color: rgb(88, 84, 80);
     margin: 20px auto;
 }
 
@@ -191,7 +194,7 @@ hr {
 .box, .system {
     padding: 10px 10px;
     margin: 1.0em auto;
-    background: rgba(180, 179, 172, 0.2);
+    background: rgba(73, 60, 57, 0.2);
     border-radius: 10px;
 }
 
@@ -276,7 +279,7 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background: rgba(166, 159, 154, 0.5);
+    background: rgba(148, 117, 117, 0.5);
 }
 
 .player {
@@ -335,7 +338,7 @@ h3+.player {
     padding-right: 20%;
     padding-top: 5px;
     padding-bottom: 25px;
-    background: rgb(246, 239, 215);
+    background: rgb(197, 148, 172);
     display: flex;
     justify-content: space-around;
     z-index: 10;
@@ -452,11 +455,11 @@ b {
 /* リンク色 */
 
 a:link:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(166, 159, 154);
+    color: rgb(88, 84, 80);
 }
 
 a:visited:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(166, 159, 154);
+    color: rgb(88, 84, 80);
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
@@ -469,15 +472,15 @@ a:hover:not(.list_link):not(.tooltip):not(.page) {
 /* フッターのリンク色を変える場合は以下を編集 */
 
 a:link.page {
-    color: rgb(63, 64, 59);
+    color: rgb(88, 84, 80);
 }
 
 a:visited.page {
-    color: rgb(63, 64, 59);
+    color: rgb(88, 84, 80);
 }
 
 a:hover.page {
-    color: rgb(166, 159, 154);
+    color: rgb(246, 239, 215);
     transition: color 0.5s
 }
 
