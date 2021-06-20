@@ -22,7 +22,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     line-height: 1.2;
     font-size: 0.875rem;
-    color: rgb(71, 55, 85);
+    color: #fff;
     background: #ffffff;
 }
 
@@ -35,10 +35,7 @@ body {
     background-size: cover;
     height: 100%;
     position: fixed;
-    background: #fff;
-    /* fallback for old browsers */
-    background: linear-gradient(180deg, rgba(137, 78, 141, 0.6) 60%, rgba(218, 110, 83, 0.6) 100%);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(180, 179, 172);
 }
 
 ol, ul {
@@ -59,241 +56,67 @@ table {
     border-spacing: 0;
 }
 
-.system {
-    color: rgb(71, 55, 85);
+/* 見出しのwebフォント */
+
+h1, h2, h3, h4, h5, .menu, .menu2, .type {
+    font-family: 'Noto Serif JP', serif;
 }
 
-@media screen and (max-width: 767px) {
-    .body {
-        background: rgb(255, 252, 249);
-        max-width: 800px;
-        margin: auto;
-        padding: 10px 10px 60px;
-        box-sizing: border-box;
-        position: relative;
-    }
-}
+/* /見出しのwebフォント */
+
+/* index */
 
 .body {
-    background: rgb(255, 252, 249);
+    background: rgb(43, 44, 40);
     max-width: 800px;
     margin: auto;
-    padding: 20px 30px 60px;
     box-sizing: border-box;
     position: relative;
-}
-
-.main {
-    display: flex;
-}
-
-.main:not(:last-child) {
-    margin-bottom: 15px;
-}
-
-.ic {
-    margin-right: 15px;
-}
-
-@media screen and (max-width: 767px) {
-    .ic img {
-        max-width: 40px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .ic img {
-        max-width: 60px;
-    }
-}
-
-.box2 img {
-    max-width: 40px;
-}
-
-.page {
-    font-weight: bold;
-}
-
-body {
-    font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-}
-
-.box, .system {
-    padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(71, 55, 53, 0.2);
-    border-radius: 10px;
-    /*角の丸み*/
-    width: 80%;
-}
-
-.box_t {
-    font-size: 110%;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.box2 {
-    padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(218, 110, 83, 0.2);
-    border-radius: 10px;
-    /*角の丸み*/
-    width: 80%;
-}
-
-/* カーソルを重ねる要素 */
-
-.tooltip {
-    position: relative;
-    /* ツールチップの位置の基準に */
-    cursor: pointer;
-    /* カーソルを当てたときにポインターに */
-}
-
-/* ツールチップのテキスト */
-
-.tooltip-text {
-    opacity: 0;
-    /* はじめは隠しておく */
-    visibility: hidden;
-    /* はじめは隠しておく */
-    position: absolute;
-    /* 絶対配置 */
-    left: 50%;
-    /* 親に対して中央配置 */
-    transform: translateX(-50%);
-    /* 親に対して中央配置 */
-    bottom: -30px;
-    /* 親要素下からの位置 */
-    display: inline-block;
-    padding: 5px;
-    /* 余白 */
-    white-space: nowrap;
-    /* テキストを折り返さない */
-    font-size: 0.8rem;
-    /* フォントサイズ */
-    line-height: 1.3;
-    /* 行間 */
-    background: #333;
-    /* 背景色 */
-    color: #fff;
-    /* 文字色 */
-    border-radius: 3px;
-    /* 角丸 */
-    transition: 0.3s ease-in;
-    /* アニメーション */
-}
-
-/* ホバー時にツールチップの非表示を解除 */
-
-.tooltip:hover .tooltip-text {
-    opacity: 1;
-    visibility: visible;
-}
-
-h1, h2, h3, h4, h5, .menu, .menu2 {
-    font-family: fot-tsukuardgothic-std, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h1 {
-    font-size: 200%;
-    position: relative;
-    padding: 15px 10px;
-    margin: 10px auto;
-    color: rgb(50, 140, 193)
-}
-
-h2 {
-    font-size: 200%;
-    color: #fff;
-    position: relative;
-    padding: 10px 10px;
-    margin: 15px auto;
-    background-color: #c5747d;
-}
-
-h3 {
-    font-size: 160%;
-    position: relative;
-    padding: 5px 10px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background: linear-gradient(transparent 0%, #f1c7cb 0%);
-}
-
-h2+h3 {
-    margin-top: 0;
-}
-
-.footer {
-    position: fixed;
-    /* フッターを固定する */
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    /* 上部から配置の基準位置を決める */
-    left: 0;
-    /* 左から配置の基準位置を決める */
-    right: 0;
-    height: 0px;
-    /* フッターの高さを指定する */
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 5px;
-    padding-bottom: 25px;
-    /* フッター内側の余白を指定する(上下左右) */
-    background: rgba(197, 116, 125, 1);
-    /* フッターの背景色を指定する */
-    display: flex;
-    justify-content: space-around;
-    z-index: 10;
-}
-
-.footer+h3 {
-    margin-top: 0;
-}
-
-.day {
-    font-size: 120%;
-    border-left: 6px double #d8a9ae;
-    padding: 5px 10px;
-    margin-top: auto;
-    margin-bottom: 15px;
 }
 
 hr {
     border: 0 none;
     height: 2px;
-    color: rgb(75, 75, 75);
-    background-color: rgb(75, 75, 75);
-    width: 50%;
+    color: rgb(166, 159, 154);
+    background-color: rgb(166, 159, 154);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+@media screen and (max-width: 767px) {
+    .body {
+        padding: 10px 10px 60px;
+    }
+    .logo {
+        margin: 15px auto 20px;
+        max-width: 120px;
+        max-height: auto;
+    }
+    hr {
+        width: 70%;
+    }
+    .type {
+        color: rgb(166, 159, 154);
+        font-size: 90%;
+        margin: 20px auto 20px;
+    }
 }
 
-.cutin {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: 0 25%;
-    margin-bottom: 20px;
-}
-
-.cutin:hover {
-    filter: brightness(120%) drop-shadow(0px 0px 5px rgba(26, 34, 51, 0.1));
-    transition: all 0.4s;
-}
-
-b {
-    font-weight: bold;
+@media screen and (min-width: 768px) {
+    .body {
+        padding: 20px 30px 60px;
+    }
+    .logo {
+        margin: 20px auto 30px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    hr {
+        width: 50%;
+    }
+    .type {
+        color: rgb(166, 159, 154);
+        font-size: 120%;
+        margin: 20px auto 20px;
+    }
 }
 
 .index {
@@ -316,6 +139,11 @@ b {
     line-height: 100%;
 }
 
+.menu2 {
+    font-size: 120%;
+    margin: 20px auto 20px;
+}
+
 .menu>a, .menu2>a {
     text-decoration: none;
 }
@@ -327,11 +155,11 @@ b {
 }
 
 .list_link {
-    background-color: #b16f77;
+    background-color: rgba(166, 159, 154, 0.5);
     color: #fff;
     text-decoration: none;
     display: block;
-    margin: auto 5px 10px;
+    margin: -10px 5px 10px;
     padding: 0.4rem 0.3rem;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -340,59 +168,336 @@ b {
 }
 
 .list_link:hover {
-    background-color: #b08ece;
+    background-color: rgb(180, 179, 172);
 }
 
-.menu2 {
-    font-size: 120%;
-    margin: 20px auto 30px;
+.credit {
+    color: rgb(166, 159, 154);
+    margin: 20px auto;
 }
 
-.list {
+/* /index */
+
+.main {
     display: flex;
-    justify-content: center;
 }
 
-a:link:not(.list_link) {
-    color: rgb(71, 55, 85);
+.main:not(:last-child) {
+    margin-bottom: 15px;
 }
 
-a:visited:not(.list_link) {
-    color: rgb(71, 55, 85);
+/* main */
+
+.box, .system {
+    padding: 10px 10px;
+    margin: 1.0em auto;
+    background: rgba(180, 179, 172, 0.2);
+    border-radius: 10px;
 }
 
-a:hover:not(.list_link) {
-    color: #e9a272;
+.box2 {
+    padding: 10px 10px;
+    margin: 1.0em auto;
+    background: rgba(246, 239, 215, 0.3);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .ic {
+        margin-right: 10px;
+    }
+    .ic img {
+        max-width: 40px;
+    }
+    .box, .system {
+        width: 90%;
+    }
+    .box_t {
+        font-size: 110%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .box2 {
+        width: 90%;
+    }
+    .box img, .box2 img {
+        max-width: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ic {
+        margin-right: 15px;
+    }
+    .ic img {
+        max-width: 60px;
+    }
+    .box, .system {
+        width: 80%;
+    }
+    .box_t {
+        font-size: 110%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .box2 {
+        width: 80%;
+    }
+    .box img, .box2 img {
+        max-width: 40px;
+    }
+}
+
+.prot {
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+    position: relative;
+    padding: 15px 10px;
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(43, 44, 40);
+    position: relative;
+    padding: 10px 10px;
+    background-color: rgb(166, 159, 154);
+}
+
+h3 {
+    position: relative;
+    padding: 5px 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: rgba(166, 159, 154, 0.5);
+}
+
+.player {
+    border-left: 6px double rgba(166, 159, 154, 0.5);
+    padding: 5px 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 140%;
+        margin: 15px auto;
+    }
+    h3 {
+        font-size: 120%;
+    }
+    .player {
+        font-size: 110%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 200%;
+        margin: 15px auto;
+    }
+    h3 {
+        font-size: 160%;
+    }
+    .player {
+        font-size: 120%;
+    }
+}
+
+h2+h3 {
+    margin-top: -5px;
+}
+
+.footer+h3 {
+    margin-top: 0px;
+}
+
+h3+.player {
+    margin-top: -10px;
+}
+
+.footer {
+    position: fixed;
+    color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    background: rgb(246, 239, 215);
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.cutin {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 25%;
+    margin-bottom: 20px;
+}
+
+/* ツールチップ */
+
+.tooltip {
+    border-bottom: dotted 1px #FF0000;
+    position: relative;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    padding: 10px;
+    line-height: 1.3;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+    .tooltip-text {
+        display: flex;
+        position: absolute;
+        font-size: 12px;
+        background: #333;
+        color: #fff;
+        margin: auto;
+        left: -100%;
+        right: -100%;
+        width: 200px;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tooltip-text {
+        display: block;
+        background: #333;
+        color: #fff;
+        position: fixed;
+        bottom: -200px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        transition: all.2s;
+        z-index: 30
+    }
+    .tooltip:hover .tooltip-text {
+        bottom: 0;
+    }
+    .tooltip:hover:after {
+        display: block;
+    }
+    .tooltip-text:after {
+        display: block;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.2);
+        content: "";
+    }
+    .tooltip:after {
+        background: rgba(0, 0, 0, 0.2);
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        pointer-events: none;
+        display: none;
+    }
+}
+
+/* /ツールチップ */
+
+/* /main */
+
+.page {
+    font-weight: bold;
+}
+
+body {
+    font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cutin:hover, .koma:hover {
+    filter: brightness(120%) drop-shadow(0px 0px 5px rgba(26, 34, 51, 0.1));
+    transform: translateY(-5px);
+    transition: all 0.4s;
+}
+
+b {
+    font-weight: bold;
+}
+
+/* リンク色 */
+
+a:link:not(.list_link):not(.tooltip):not(.page) {
+    color: rgb(166, 159, 154);
+}
+
+a:visited:not(.list_link):not(.tooltip):not(.page) {
+    color: rgb(166, 159, 154);
+}
+
+a:hover:not(.list_link):not(.tooltip):not(.page) {
+    color: rgb(246, 239, 215);
     transition: color 0.5s
 }
 
-.gm, .pc1, .pc3, .pc4 {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+/* /リンク色 */
+
+/* フッターのリンク色を変える場合は以下を編集 */
+
+a:link.page {
+    color: rgb(63, 64, 59);
 }
 
-.pc2 {
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.2);
+a:visited.page {
+    color: rgb(63, 64, 59);
 }
+
+a:hover.page {
+    color: rgb(166, 159, 154);
+    transition: color 0.5s
+}
+
+/* /フッターのリンク色 */
+
+/* name */
 
 .gm {
     color: #888888;
 }
 
 .pc1 {
-    color: #2196f3;
+    color: #795548;
 }
 
 .pc2 {
-    color: #4682b4;
+    color: #ccbfb8;
 }
 
-.pc3 {
-    color: #7e2639;
-}
-
-.pc4 {
-    color: #ec6d51;
-}
+/* /name */
 
 @media screen and (min-width: 641px) {}
 
