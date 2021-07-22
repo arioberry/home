@@ -349,6 +349,10 @@ h3+.player {
     margin-bottom: 20px;
 }
 
+.fail {
+    color: #FF0000;
+}
+
 /* ツールチップ */
 
 .tooltip {
