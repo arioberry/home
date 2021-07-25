@@ -357,6 +357,9 @@ h3+.player {
 .fail {
     color: #FF0000;
 }
+.success {
+    color: #10addd;
+}
 
 /* ツールチップ */
 
