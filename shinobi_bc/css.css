@@ -93,6 +93,11 @@ hr {
         max-width: 300px;
         max-height: 250px;
     }
+    .logo_k {
+        margin: 15px auto 20px;
+        max-width: 180px;
+        max-height: auto;
+    }
     hr {
         width: 70%;
     }
@@ -108,6 +113,11 @@ hr {
         padding: 20px 30px 60px;
     }
     .logo {
+        margin: 20px auto 30px;
+        max-width: 60%;
+        max-height: 60%;
+    }
+        .logo_k {
         margin: 20px auto 30px;
         max-width: 60%;
         max-height: 60%;
