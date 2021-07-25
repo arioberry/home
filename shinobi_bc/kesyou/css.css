@@ -278,7 +278,7 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    color:rgb(76, 69, 94);
+    color: rgb(76, 69, 94);
     background: rgba(206, 169, 218, 0.5);
 }
 
@@ -304,11 +304,11 @@ h3 {
 
 @media screen and (min-width: 768px) {
     h2 {
-        font-size: 200%;
+        font-size: 180%;
         margin: 15px auto;
     }
     h3 {
-        font-size: 160%;
+        font-size: 140%;
     }
     .player {
         font-size: 120%;
@@ -355,9 +355,11 @@ h3+.player {
 .fail {
     color: #FF0000;
 }
+
 .success {
     color: #10addd;
 }
+
 /* ツールチップ */
 
 .tooltip {
@@ -469,7 +471,7 @@ a:visited:not(.list_link):not(.tooltip):not(.page) {
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(148, 149, 221);
+    color: rgb(102, 103, 179);
     transition: color 0.5s
 }
 

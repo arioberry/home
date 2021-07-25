@@ -81,6 +81,10 @@ hr {
     background-color: rgb(166, 159, 154);
 }
 
+.type {
+    color: rgb(166, 159, 154);
+}
+
 @media screen and (max-width: 767px) {
     .body {
         padding: 10px 10px 60px;
@@ -94,7 +98,6 @@ hr {
         width: 70%;
     }
     .type {
-        color: rgb(166, 159, 154);
         font-size: 90%;
         margin: 20px auto 20px;
     }
@@ -113,7 +116,6 @@ hr {
         width: 50%;
     }
     .type {
-        color: rgb(166, 159, 154);
         font-size: 120%;
         margin: 20px auto 20px;
     }
@@ -347,6 +349,14 @@ h3+.player {
     object-fit: cover;
     object-position: 0 25%;
     margin-bottom: 20px;
+}
+
+.fail {
+    color: #FF0000;
+}
+
+.success {
+    color: #10addd;
 }
 
 /* ツールチップ */
