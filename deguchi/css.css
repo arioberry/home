@@ -116,8 +116,8 @@ hr {
     }
     .logo {
         margin: 20px auto 30px;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 300px;
+        max-height: auto%;
     }
     hr {
         width: 50%;
@@ -278,14 +278,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 -50px;
 }
 
 h2::before, h2::after {
     content: "";
     width: 20%;
     height: 8px;
-    background-image: repeating-linear-gradient(-45deg, #777 0, #777 1px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%);
+    background-image: repeating-linear-gradient(-45deg, rgb(139, 131, 128) 0, rgb(85, 82, 80) 1px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%);
     background-size: 8px 8px;
     flex-grow: 1;
 }
@@ -304,11 +303,11 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background: rgba(166, 159, 154, 0.5);
+    background: rgb(85, 82, 80);
 }
 
 .player {
-    border-left: 6px double rgba(166, 159, 154, 0.5);
+    border-left: 6px double rgb(85, 82, 80);
     padding: 5px 10px;
     margin-top: 0;
     margin-bottom: 15px;
