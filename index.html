@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>arioberry</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <!-- ヘッダー -->
+    <header>
+      <h1>arioberry</h1><!--　サイト名 -->
+      <nav class="menu"><!-- メニュー -->
+        <ul>
+          <li><a href="index.html">Info</a></li><!-- メニュー項目 -->
+          <li><a href="main.html">Main</a></li><!-- メニュー項目 -->
+          <li><a href="memo.html">Memo</a></li><!-- メニュー項目 -->
+          <li><a href="sample.html">Sample</a></li><!-- メニュー項目 -->
+          <li><a href="bkm.html">Bookmark</a></li><!-- メニュー項目 -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- コンテンツ -->
+    <div class="contents">
+
+      <section>
+        <h2>News</h2><!-- 見出し -->
+        <ul class="w-auto"><!-- 更新履歴リスト -->
+          <li class="border"><time class="label">2018.12.4</time><span>更新内容を記載してください</span></li>
+          <li class="border"><time class="label">2018.12.4</time><span>更新内容を記載してください</span></li>
+          <li class="border"><time class="label">2018.12.4</time><span>更新内容を記載してください</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>About this site</h2><!-- 見出し -->
+        <p>このテンプレートは、小説等のテキストをメインとした個人サイトを想定して作成しております。<br>
+          もちろん、他の目的のサイトにも使っていただけます。<br>
+          不要部分削除など、ご自由にカスタマイズしてお使いください。</p>
+        <h3>動作確認環境</h3><!-- 小見出し -->
+        <ul class="w-auto"><!-- リスト -->
+          <li class="border"><span class="label">OS</span>Windows10</li>
+          <li class="border"><span class="label">ブラウザ</span>Chrome（最新バージョン）</li>
+          <li class="border"><span class="label">解像度</span>1920 x 1080</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>About link</h2><!-- 見出し -->
+        <p>リンクについてのご注意など</p>
+        <ul class="w-auto"><!-- リスト -->
+          <li class="border"><span class="label">Site Name</span>サイト名</li>
+          <li class="border"><span class="label">Master</span>管理人様のお名前</li>
+          <li class="border"><span class="label">URL</span>http://xxx.com</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- スムーススクロールのアイコン -->
+    <div class="arrow-mobile">
+      <a href="#"><i class="fas fa-chevron-circle-up"></i></a>
+    </div>
+
+    <!-- フッター -->
+    <footer>Copyright © 20XX Your site name<br>template @ <a href="https://utsusemi.hiroec.com/" target="_blank">空蝉</a></footer>
+
+    <!-- jQuery読み込み -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+
+  </body>
+</html>

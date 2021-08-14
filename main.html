@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>arioberry</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <!-- ヘッダー -->
+    <header>
+      <h1>Your site name</h1><!--　サイト名 -->
+      <nav class="menu"><!-- メニュー -->
+        <ul>
+          <li><a href="index.html">Info</a></li><!-- メニュー項目 -->
+          <li><a href="main.html">Main</a></li><!-- メニュー項目 -->
+          <li><a href="memo.html">Memo</a></li><!-- メニュー項目 -->
+          <li><a href="sample.html">Sample</a></li><!-- メニュー項目 -->
+          <li><a href="bkm.html">Bookmark</a></li><!-- メニュー項目 -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- コンテンツ -->
+    <div class="contents">
+
+<h1>TRPG repray</h1>
+      <section>
+        <h2 class="ja line-l">2021</h2><!-- 見出し -->
+        <ul><!-- リスト -->
+          <li><span class="line-r"><a href="novel.html">神様のヒマ潰し</a></span>シノビガミブートキャンプ第一弾</li>
+          <li><span class="line-r"><a href="novel.html">火神被殺</a></span>シノビガミブートキャンプ第二弾</li>
+          <li><span class="line-r"><a href="novel.html">化粧応神</a></span>シノビガミブートキャンプ第三弾</li>
+          <li><span class="line-r"><a href="novel.html">出口なし</a></span>シノビガミ</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="ja line-l">2020</h2><!-- 見出し -->
+        <ul>
+        <li><span class="line-r"><a href="novel.html">あなたへの花</a></span>ブラッドムーンキャンペーン</li>
+        <li><span class="line-r"><a href="novel.html">∟ミツましまとめ</a></span>あな花のミツまし関連</li>
+        <li><span class="line-r"><a href="novel.html">16人の救世主</a></span>Dead or AliCe</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="ja line-l">短編小説</h2><!-- 見出し -->
+
+        <ul><!-- リスト -->
+          <li><span class="line-r"><a href="novel.html">タイトル</a></span>小説の説明文など</li>
+          <li><span class="line-r"><a href="novel.html">タイトル</a></span>小説の説明文など</li>
+          <li><span class="line-r"><a href="novel.html">タイトル</a></span>小説の説明文など</li>
+          <li><span class="line-r"><a href="novel.html">タイトル</a></span>小説の説明文など</li>
+        </ul>
+      </section>
+
+    </div>
+
+        <!-- スムーススクロールのアイコン -->
+        <div class="arrow-mobile">
+          <a href="#"><i class="fas fa-chevron-circle-up"></i></a>
+        </div>
+
+        <!-- フッター -->
+        <footer>Copyright © 20XX Your site name<br>template @ <a href="https://utsusemi.hiroec.com/" target="_blank">空蝉</a></footer>
+
+        <!-- jQuery読み込み -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+        <!-- ＃リンクのスムーズスクロール -->
+        <script>
+          $(function(){
+            // #で始まるリンクをクリックしたら実行されます
+            $('a[href^="#"]').click(function() {
+              // スクロールの速度
+              var speed = 400; // ミリ秒で記述
+              var href= $(this).attr("href");
+              var target = $(href == "#" || href == "" ? 'html' : href);
+              var position = target.offset().top;
+              $('body,html').animate({scrollTop:position}, speed, 'swing');
+              return false;
+            });
+          });
+        </script>
+  </body>
+</html>

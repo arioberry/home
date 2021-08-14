@@ -19,6 +19,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
+html, body,.body {
+    height: 100%;
+}
+
 body {
     line-height: 1.2;
     font-size: 0.875rem;
@@ -35,7 +39,8 @@ body {
     background-size: cover;
     height: 100%;
     position: fixed;
-    background: rgb(180, 179, 172);
+    background-image: url(img/bg.jpg);
+    background-position: center;
 }
 
 ol, ul {
@@ -67,11 +72,16 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 /* index */
 
 .body {
-    background: rgb(43, 44, 40);
+    background: rgba(0, 0, 0, 0.9);
     max-width: 800px;
+    min-height: 100%;
     margin: auto;
     box-sizing: border-box;
     position: relative;
+}
+
+body > .body {
+    height: auto;
 }
 
 hr {
@@ -87,7 +97,7 @@ hr {
     }
     .logo {
         margin: 15px auto 20px;
-        max-width: 120px;
+        max-width: 200px;
         max-height: auto;
     }
     hr {
@@ -265,9 +275,27 @@ h1 {
 
 h2 {
     color: #fff;
-    position: relative;
-    padding: 10px 10px;
-    background-color: rgb(166, 159, 154);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -50px;
+}
+
+h2::before, h2::after {
+    content: "";
+    width: 20%;
+    height: 8px;
+    background-image: repeating-linear-gradient(-45deg, #777 0, #777 1px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%);
+    background-size: 8px 8px;
+    flex-grow: 1;
+}
+
+h2::before {
+    margin-right: 30px;
+}
+
+h2::after {
+    margin-left: 30px;
 }
 
 h3 {
@@ -301,11 +329,11 @@ h3 {
 
 @media screen and (min-width: 768px) {
     h2 {
-        font-size: 200%;
-        margin: 15px auto;
+        font-size: 180%;
+        margin: 30px auto;
     }
     h3 {
-        font-size: 160%;
+        font-size: 140%;
     }
     .player {
         font-size: 120%;
@@ -352,6 +380,7 @@ h3+.player {
 .fail {
     color: #FF0000;
 }
+
 .success {
     color: #10addd;
 }
@@ -491,7 +520,6 @@ a:hover.page {
 /* /フッターのリンク色 */
 
 /* name */
-
 
 .pc1 {
     color: #2196f3;

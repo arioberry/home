@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/*------------------------------------
+共通
+------------------------------------*/
+html{
+  position: relative;
+  font-size: 62.5%;
+}
+*{
+box-sizing: border-box;
+}
+body{
+  font-size: 1.3rem;
+  font-family: 'Marcellus','Meiryo', serif;
+  color: #666;
+  background-color: #ffeded;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+p, ul{
+  margin: 10px 0;
+}
+li{
+  margin: 10px 0;
+}
+a{
+  text-decoration: none;
+  color: #666;
+}
+a:hover{
+  background-color: #fff4f4;
+}
+h1, h2, h3, h4{
+  margin: 10px 0;
+  font-weight: normal;
+}
+h1{
+  font-size: 4rem;
+}
+h2{
+  padding-left: 10px;
+  border-left: 3px solid #ccbebe;
+  font-size: 2rem;
+}
+h2.ja{
+  font-size: 1.5rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+h3.ja{
+  font-size: 1.3rem;
+}
+h4{
+  font-size: 1.3rem;
+}
+ul{
+  list-style: none;
+}
+hr{
+  width: 50%;
+  border: 0;
+  border-bottom: 3px dotted #ddd;
+  text-align: center;
+}
+input{
+  margin: 10px;
+  padding: 3px;
+  border: 0.5px solid #ccbebe;
+}
+input:focus, textarea:focus{
+  outline: none;
+}
+input[type="button"]{
+  background-color: #fff4f4;
+  cursor: pointer;
+}
+textarea{
+  display: block;
+  border: 0.5px solid #ccbebe;
+}
+/*センタリング*/
+.center{
+  text-align: center;
+}
+
+/*------------------------------------
+文字等表示部分の横幅
+------------------------------------*/
+header, .contents, footer{
+  margin: 0 auto;
+  width: 800px;
+  background-color: #fff;
+}
+
+/*------------------------------------
+ヘッダー
+------------------------------------*/
+header{
+  padding: 30px 0;
+  text-align: center;
+}
+
+/*------------------------------------
+メニュー
+------------------------------------*/
+.menu li{
+  display: inline-block;
+  letter-spacing: 2px;
+}
+.menu a{
+    padding: 3px 8px;
+}
+
+/*------------------------------------
+コンテンツ部分
+------------------------------------*/
+.contents{
+  margin: 70px auto;
+  padding: 50px;
+}
+section{
+  margin-bottom: 30px;
+}
+/*ラベル付け*/
+.label{
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  padding: 3px 8px;
+  background-color: #fff4f4;
+  min-width: 90px;
+}
+/*下線*/
+.border{
+  border-bottom: 1px solid #fff4f4;
+}
+/*リストに下線をつける場合の余白*/
+li.border{
+  margin: 3px 0;
+  padding-right: 10px;
+}
+/*横並びリスト*/
+ul.yoko li{
+  display: inline;
+}
+/*リストの横幅をオートに*/
+.w-auto{
+  display: inline-block;
+  }
+/*右側に線をつける*/
+.line-r{
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #ccbebe;
+  }
+
+/*小説*/
+.title{
+  margin: 50px 0;
+  letter-spacing: 3px;
+}
+
+/*Memo*/
+.memo{
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.memoTitle{
+  font-size: 1.5rem;
+}
+.memo p{
+  margin-left: 30px;
+}
+
+/*------------------------------------
+フッター
+------------------------------------*/
+footer{
+  padding: 10px;
+  text-align: center;
+}
+
+/*------------------------------------
+ＰＣ用
+------------------------------------*/
+@media (min-width:800px) {
+.arrow-mobile{
+  display: none;
+}
+}
+
+/*------------------------------------
+スマホ用
+------------------------------------*/
+@media (max-width:799px) {
+  header, .contents, footer{
+    width: 100%;
+    background-color: #fff;
+  }
+  header{
+    text-align: center;
+    height: 200px;
+  }
+  header img{
+    margin: 30px 0 20px;
+    width: 100px;
+  }
+  .contents{
+    padding: 20px;
+  }
+  .title{
+    margin: 100px 0;
+  }
+  .arrow-mobile{
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+  }
+  .arrow-mobile i{
+  font-size: 3rem;
+  }
+}
