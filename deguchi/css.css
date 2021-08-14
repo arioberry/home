@@ -117,7 +117,7 @@ hr {
     .logo {
         margin: 20px auto 30px;
         max-width: 300px;
-        max-height: auto%;
+        max-height: auto;
     }
     hr {
         width: 50%;
@@ -170,7 +170,7 @@ hr {
     text-decoration: none;
     display: block;
     margin: 5px 5px;
-    padding: 0.4rem 0.3rem;
+    padding: 0.4rem 1rem;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
