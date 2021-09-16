@@ -128,8 +128,8 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 hr {
     border: 0 none;
     height: 2px;
-    color: rgb(166, 159, 154);
-    background-color: rgb(166, 159, 154);
+    color: rgb(75, 115, 128, 0.5);
+    background-color: rgb(75, 115, 128, 0.5);
 }
 
 .body_i {
@@ -221,7 +221,7 @@ hr {
 }
 
 .list_link {
-    background-color: rgba(166, 159, 154, 0.5);
+    background-color: rgba(75, 115, 128, 0.5);
     color: #fff;
     text-decoration: none;
     display: block;
@@ -234,11 +234,11 @@ hr {
 }
 
 .list_link:hover {
-    background-color: rgb(180, 179, 172);
+    background-color: rgb(58, 44, 50);
 }
 
 .credit {
-    color: rgb(166, 159, 154);
+    color: rgb(143, 166, 170);
     margin: 20px auto;
 }
 
@@ -257,7 +257,7 @@ hr {
 .box, .system {
     padding: 10px 10px;
     margin: 1.0em auto;
-    background: rgba(180, 179, 172, 0.2);
+    background: rgba(172, 180, 180, 0.2);
     border-radius: 10px;
 }
 
