@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 }
 
 .body {
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.9);
     max-width: 800px;
     margin: auto;
     box-sizing: border-box;
@@ -225,12 +225,9 @@ hr {
     color: #fff;
     text-decoration: none;
     display: block;
-    margin: 5px 5px;
-    padding: 0.4rem 0.3rem;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    width: 350px;
+    margin: 3px 5px;
+    padding: 0.8rem 0.5rem;
 }
 
 .list_link:hover {
@@ -264,7 +261,7 @@ hr {
 .box2 {
     padding: 10px 10px;
     margin: 1.0em auto;
-    background: rgba(246, 239, 215, 0.3);
+    background: rgba(54, 94, 99, 0.2);
     border-radius: 10px;
 }
 
