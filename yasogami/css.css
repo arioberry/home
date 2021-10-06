@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
     background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.646 0.558" preserveAspectRatio="none"><path d="M2.646.558V0L1.323.53 0 0v.558z" fill="%23000000"/></svg>');
 }
 
+
 @media (min-width:768px) {
     .shapedividers_com-7041::before {
         background-size: 100% 55px;
