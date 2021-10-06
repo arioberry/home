@@ -172,8 +172,8 @@ hr {
     }
     .logo {
         margin: 20px auto 30px;
-        max-width: 100%;
-        max-height: 100%;
+        width: 140px;
+        height: auto;
     }
     hr {
         width: 50%;
@@ -350,7 +350,7 @@ h2 {
     color: #fff;
     position: relative;
     padding: 10px 10px;
-    background-color: rgb(166, 159, 154);
+    background-color: rgba(110, 107, 105, 0.7);
 }
 
 h3 {
@@ -553,7 +553,6 @@ a:visited:not(.list_link):not(.tooltip):not(.page) {
 a:hover:not(.list_link):not(.tooltip):not(.page) {
     color: rgb(215, 237, 246);
     transition: color 0.5s;
-    transform: translate(5px, 0);
 }
 
 /* /リンク色 */
