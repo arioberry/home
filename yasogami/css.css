@@ -221,17 +221,37 @@ hr {
 }
 
 .list_link {
-    background-color: rgba(75, 115, 128, 0.5);
+    background-color: rgb(10, 51, 65);
     color: #fff;
+    border: 1px solid rgba(56, 111, 129, 0);
     text-decoration: none;
-    display: block;
+    display: inline-block;
     width: 350px;
     margin: 3px 5px;
     padding: 0.8rem 0.5rem;
 }
 
+.list_link::before,
+.list_link::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.list_link,
+.list_link::before,
+.list_link::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .list_link:hover {
-    background-color: rgb(58, 44, 50);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .credit {
@@ -345,7 +365,7 @@ h3 {
 .player {
     border-left: 6px double rgba(166, 159, 154, 0.5);
     padding: 5px 10px;
-    margin-top: 0;
+    margin-top: 40px;
     margin-bottom: 15px;
 }
 
@@ -523,16 +543,17 @@ b {
 /* リンク色 */
 
 a:link:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(166, 159, 154);
+    color: rgb(77, 164, 167);
 }
 
 a:visited:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(166, 159, 154);
+    color: rgb(77, 164, 167);
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(246, 239, 215);
-    transition: color 0.5s
+    color: rgb(215, 237, 246);
+    transition: color 0.5s;
+    transform: translate(5px, 0);
 }
 
 /* /リンク色 */
