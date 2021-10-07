@@ -256,8 +256,8 @@ hr {
 }
 
 .credit {
-    color: rgb(143, 166, 170);
-    margin: 20px auto;
+    color: rgb(255, 255, 255);
+    margin: 40px auto;
 }
 
 /* /index */
@@ -544,15 +544,15 @@ b {
 /* リンク色 */
 
 a:link:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(77, 164, 167);
+    color: rgb(155, 84, 87);
 }
 
 a:visited:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(77, 164, 167);
+    color: rgb(155, 84, 87);
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(215, 237, 246);
+    color: rgb(224, 209, 207);
     transition: color 0.5s;
 }
 
