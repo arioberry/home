@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 
 /* index */
 
-.shapedividers_com-7041 {
+.title {
     text-align: center;
     height: 800px;
     display: flex;
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
     position: relative;
 }
 
-.shapedividers_com-7041::before {
+.title::before {
     content: '';
     font-family: 'shape divider from ShapeDividers.com';
     position: absolute;
@@ -95,14 +95,14 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 
 
 @media (min-width:768px) {
-    .shapedividers_com-7041::before {
+    .title::before {
         background-size: 100% 55px;
         background-position: 50% 100%;
     }
 }
 
 @media (min-width:1025px) {
-    .shapedividers_com-7041::before {
+    .title::before {
         bottom: -0.1vw;
         left: -0.1vw;
         right: -0.1vw;
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 }
 
 @media (min-width:2100px) {
-    .shapedividers_com-7041::before {
+    .title::before {
         background-size: 100% calc(2vw + 90px);
     }
 }
@@ -136,7 +136,6 @@ hr {
 .body_i {
     background: rgb(0, 0, 0);
     color: #fff;
-    margin-top: -10px;
     box-sizing: border-box;
     position: relative;
     padding: 10px 20px 60px;
