@@ -136,7 +136,7 @@ hr {
 .body_i {
     background: rgb(0, 0, 0);
     color: #fff;
-    box-sizing: border-box;
+              box-sizing: border-box;
     position: relative;
     padding: 10px 20px 60px;
 }
@@ -153,7 +153,7 @@ hr {
     }
     .logo {
         margin: 15px auto 20px;
-        max-width: 120px;
+        max-width: 80px;
         max-height: auto;
     }
     hr {
