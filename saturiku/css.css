@@ -60,11 +60,11 @@ table {
 }
 
 /* 見出しのwebフォント */
-h1, h2, h3, h4, h5 {
+h1 {
     font-family: 'Dela Gothic One', cursive;
 }
 
-.menu, .menu2, .type {
+h2, h3, h4, h5 .menu, .menu2, .type, .list_link {
     font-family: 'RocknRoll One', sans-serif;
 }
 
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5 {
 /* index */
 
 .body {
-    background: rgba(43, 44, 40, 0.4);
+    background: rgba(25, 15, 14, 0.4);
     max-width: 800px;
     margin: auto;
     box-sizing: border-box;
@@ -96,7 +96,7 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
-    .body,.body_i {
+    .body, .body_i {
         padding: 10px 10px 60px;
     }
 
@@ -118,7 +118,7 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-    .body,.body_i {
+    .body, .body_i {
         padding: 20px 30px 60px;
     }
 
@@ -304,8 +304,9 @@ h1 {
 h2 {
     color: #fff;
     position: relative;
-    padding: 10px 10px;
-    background-color: rgb(166, 159, 154);
+    padding: 10px 15px;
+    background-color: rgba(25, 15, 14, 0.4);
+
 }
 
 h3 {
@@ -314,11 +315,11 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background: rgba(129, 139, 177, 0.5);
+    background: rgba(25, 15, 14, 0.4);
 }
 
 .player {
-    border-left: 6px double rgba(166, 159, 154, 0.5);
+    border-left: 6px double rgba(255, 224, 189, 0.4);
     padding: 5px 10px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -327,7 +328,9 @@ h3 {
 @media screen and (max-width: 767px) {
     h2 {
         font-size: 140%;
-        margin: 15px auto;
+        margin-top: 15px;
+        margin-bottom: 30px;
+
     }
 
     h3 {
@@ -342,7 +345,10 @@ h3 {
 @media screen and (min-width: 768px) {
     h2 {
         font-size: 200%;
-        margin: 15px auto;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        margin-left: -30px;
+        margin-right: -30px;
     }
 
     h3 {
@@ -546,6 +552,13 @@ a:hover.page {
 
 
 /* /name */
+
+/* 何かしらの独自タグ　*/
+.cage {
+    width: 50px;
+    height: auto;
+    margin-bottom: 5px;
+}
 
 @media screen and (min-width: 641px) {}
 
