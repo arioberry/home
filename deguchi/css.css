@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-html, body,.body {
+html, body, .body {
     height: 100%;
 }
 
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
     position: relative;
 }
 
-body > .body {
+body>.body {
     height: auto;
 }
 
@@ -95,14 +95,17 @@ hr {
     .body {
         padding: 10px 10px 60px;
     }
+
     .logo {
         margin: 15px auto 20px;
         max-width: 200px;
         max-height: auto;
     }
+
     hr {
         width: 70%;
     }
+
     .type {
         color: rgb(166, 159, 154);
         font-size: 90%;
@@ -114,14 +117,17 @@ hr {
     .body {
         padding: 20px 30px 60px;
     }
+
     .logo {
         margin: 20px auto 30px;
         max-width: 300px;
         max-height: auto;
     }
+
     hr {
         width: 50%;
     }
+
     .type {
         color: rgb(166, 159, 154);
         font-size: 120%;
@@ -216,21 +222,26 @@ hr {
     .ic {
         margin-right: 10px;
     }
+
     .ic img {
         max-width: 40px;
     }
+
     .box, .system {
         width: 90%;
     }
+
     .box_t {
         font-size: 110%;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
+
     .box2 {
         width: 90%;
     }
+
     .box img, .box2 img {
         max-width: 30px;
     }
@@ -240,21 +251,26 @@ hr {
     .ic {
         margin-right: 15px;
     }
+
     .ic img {
         max-width: 60px;
     }
+
     .box, .system {
         width: 80%;
     }
+
     .box_t {
         font-size: 110%;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
+
     .box2 {
         width: 80%;
     }
+
     .box img, .box2 img {
         max-width: 40px;
     }
@@ -318,9 +334,11 @@ h3 {
         font-size: 140%;
         margin: 15px auto;
     }
+
     h3 {
         font-size: 120%;
     }
+
     .player {
         font-size: 110%;
     }
@@ -331,9 +349,11 @@ h3 {
         font-size: 180%;
         margin: 30px auto;
     }
+
     h3 {
         font-size: 140%;
     }
+
     .player {
         font-size: 120%;
     }
@@ -431,18 +451,22 @@ h3+.player {
         transition: all.2s;
         z-index: 30
     }
+
     .tooltip:hover .tooltip-text {
         bottom: 0;
     }
+
     .tooltip:hover:after {
         display: block;
     }
+
     .tooltip-text:after {
         display: block;
         position: fixed;
         background: rgba(0, 0, 0, 0.2);
         content: "";
     }
+
     .tooltip:after {
         background: rgba(0, 0, 0, 0.2);
         content: "";
@@ -527,12 +551,21 @@ a:hover.page {
 .pc2 {
     color: #4caf50;
 }
+
 .shitobi {
     color: #9e9e9e;
 }
 
 .mikura {
     color: #9c27b0;
+}
+
+.asuha {
+    color: #03a9f4;
+}
+
+.mitsuki {
+    color: #dda0dd;
 }
 
 /* /name */
