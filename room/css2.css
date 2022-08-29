@@ -25,9 +25,9 @@ html, body, .body {
 
 body {
     line-height: 1.2;
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     color: #fff;
-    background: rgb(26, 26, 26);
+    background: #ffffff;
 }
 
 .p {
@@ -62,6 +62,16 @@ table {
     border-spacing: 0;
 }
 
+
+.fail {
+    color: #FF0000;
+}
+
+.success {
+    color: #10addd;
+}
+
+
 /* 見出しのwebフォント */
 
 h1, h2, h3, h4, h5, .menu, .menu2, .type {
@@ -73,9 +83,9 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 /* index */
 
 .body {
-    background: rgba(17, 15, 16, 0.9);
+    background: rgba(22, 17, 17, 0.7);
     max-width: 800px;
-    min-height: 100%;
+    max-height: 100%;
     margin: auto;
     box-sizing: border-box;
     position: relative;
@@ -85,34 +95,25 @@ body>.body {
     height: auto;
 }
 
-.hr {
-    background-image: linear-gradient(to right, rgb(145, 135, 141), rgb(145, 135, 141) 5px, transparent 5px, transparent 8px);
-    /* 幅2の線を作る */
-    background-size: 14px 2px;
-    /* グラデーションの幅・高さを指定 */
-    background-position: left bottom;
-    /* 背景の開始位置を指定 */
-    background-repeat: repeat-x;
-    /* 横向きにのみ繰り返す */
-    max-width: 70%;
-    margin: auto;
+hr {
+    border: 0 none;
+    height: 2px;
+    color: rgb(166, 159, 154);
+    background-color: rgb(166, 159, 154);
 }
 
 @media screen and (max-width: 767px) {
     .body {
         padding: 10px 10px 60px;
     }
-
     .logo {
         margin: 15px auto 20px;
-        max-width: 200px;
+        max-width: 120px;
         max-height: auto;
     }
-
     hr {
         width: 70%;
     }
-
     .type {
         color: rgb(166, 159, 154);
         font-size: 90%;
@@ -124,17 +125,14 @@ body>.body {
     .body {
         padding: 20px 30px 60px;
     }
-
     .logo {
         margin: 20px auto 30px;
-        max-width: 300px;
-        max-height: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
-
     hr {
         width: 50%;
     }
-
     .type {
         color: rgb(166, 159, 154);
         font-size: 120%;
@@ -178,17 +176,20 @@ body>.body {
 }
 
 .list_link {
+    background-color: rgba(166, 159, 154, 0.5);
     color: #fff;
     text-decoration: none;
     display: block;
-    margin: 8px 0px;
-    padding: 0.2rem 0.2rem;
+    margin: -10px 5px 10px;
+    padding: 0.4rem 0.3rem;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .list_link:hover {
-    color: rgb(226, 54, 105);
-    font-size: 110%;
-    transition: 0.3s;
+    background-color: rgb(180, 179, 172);
 }
 
 .credit {
@@ -211,70 +212,53 @@ body>.body {
 .box, .system {
     padding: 10px 10px;
     margin: 1.0em auto;
-    background: rgba(156, 85, 129, 0.2);
+    background: rgba(180, 179, 172, 0.2);
     border-radius: 10px;
 }
 
 .box2 {
     padding: 10px 10px;
     margin: 1.0em auto;
-    background: rgba(92, 76, 85, 0.2);
+    background: rgba(246, 239, 215, 0.3);
     border-radius: 10px;
 }
+
 
 .box3 {
     padding: 10px 10px;
     margin: 1.0em auto;
-    background: rgba(156, 85, 129, 0.2);
+    background: rgba(246, 239, 215, 0.3);
     border-radius: 10px;
 }
 
 
-.bg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    max-width: 500px;
-    text-align: center;
-}
-
-.card {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    max-width: 100%;
+.box4 {
+    padding: 10px 10px;
+    margin: 1.0em auto;
+    background: rgba(246, 239, 215, 0.3);
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 767px) {
     .ic {
         margin-right: 10px;
     }
-
-
     .ic img {
         max-width: 40px;
     }
-
     .box, .system {
         width: 90%;
     }
-
     .box_t {
         font-size: 110%;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
-
-    .box2 {
+    .box2,.box3,.box4 {
         width: 90%;
     }
-
-    .box img, .box2 img {
+    .box img, .box2 img,.box3 img,.box4 img {
         max-width: 30px;
     }
 }
@@ -283,27 +267,22 @@ body>.body {
     .ic {
         margin-right: 15px;
     }
-
     .ic img {
         max-width: 60px;
     }
-
     .box, .system {
         width: 80%;
     }
-
     .box_t {
         font-size: 110%;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
-
-    .box2 {
+    .box2,.box3,.box4 {
         width: 80%;
     }
-
-    .box img, .box2 img {
+    .box img, .box2 img, .box3 img,.box4 img {
         max-width: 40px;
     }
 }
@@ -323,26 +302,9 @@ h1 {
 
 h2 {
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h2::before, h2::after {
-    content: "";
-    width: 20%;
-    height: 8px;
-    background-image: repeating-linear-gradient(-45deg, rgb(226, 54, 105) 0, rgb(226, 54, 105) 1px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%);
-    background-size: 8px 8px;
-    flex-grow: 1;
-}
-
-h2::before {
-    margin-right: 30px;
-}
-
-h2::after {
-    margin-left: 30px;
+    position: relative;
+    padding: 10px 10px;
+    background-color: rgb(166, 159, 154);
 }
 
 h3 {
@@ -351,11 +313,11 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background: rgb(226, 54, 105);
+    background: rgba(166, 159, 154, 0.5);
 }
 
 .player {
-    border-left: 6px double rgb(226, 54, 105);
+    border-left: 6px double rgba(166, 159, 154, 0.5);
     padding: 5px 10px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -366,11 +328,9 @@ h3 {
         font-size: 140%;
         margin: 15px auto;
     }
-
     h3 {
         font-size: 120%;
     }
-
     .player {
         font-size: 110%;
     }
@@ -378,14 +338,12 @@ h3 {
 
 @media screen and (min-width: 768px) {
     h2 {
-        font-size: 180%;
-        margin: 30px auto;
+        font-size: 200%;
+        margin: 15px auto;
     }
-
     h3 {
-        font-size: 140%;
+        font-size: 160%;
     }
-
     .player {
         font-size: 120%;
     }
@@ -414,7 +372,7 @@ h3+.player {
     padding-right: 20%;
     padding-top: 5px;
     padding-bottom: 25px;
-    background: rgb(226, 54, 105);
+    background: rgb(246, 239, 215);
     display: flex;
     justify-content: space-around;
     z-index: 10;
@@ -428,18 +386,10 @@ h3+.player {
     margin-bottom: 20px;
 }
 
-.fail {
-    color: #FF0000;
-}
-
-.success {
-    color: #10addd;
-}
-
 /* ツールチップ */
 
 .tooltip {
-    border-bottom: dotted 1px #FF0000;
+    font-weight: bold;
     position: relative;
 }
 
@@ -543,40 +493,36 @@ b {
 /* リンク色 */
 
 a:link:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(245, 113, 153);
+    color: rgb(166, 159, 154);
 }
 
 a:visited:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(224, 100, 137);
+    color: rgb(166, 159, 154);
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(246, 215, 224);
+    color: rgb(246, 239, 215);
     transition: color 0.5s
 }
-
-
 
 /* /リンク色 */
 
 /* フッターのリンク色を変える場合は以下を編集 */
 
 a:link.page {
-    color: rgb(255, 255, 255);
+    color: rgb(63, 64, 59);
 }
 
 a:visited.page {
-    color: rgb(255, 255, 255);
+    color: rgb(63, 64, 59);
 }
 
 a:hover.page {
-    color: rgb(246, 215, 224);
+    color: rgb(166, 159, 154);
     transition: color 0.5s
 }
 
 /* /フッターのリンク色 */
-
-/* name */
 
 /* name */
 
@@ -588,26 +534,24 @@ a:hover.page {
     color: rgb(0, 150, 136);
 }
 
+
 .pc2 {
     color: rgb(177, 53, 70);
 }
 
 .pc3 {
-    color: rgb(161, 103, 45);
-}
+    color: rgb(161, 103, 45);}
 
 .pk {
-    color: rgb(96, 125, 139);
-}
+    color: rgb(96, 125, 139);}
 
 /* /name */
-
-/* love */
-
-.love {
-    color: rgb(226, 54, 105);
-}
 
 @media screen and (min-width: 641px) {}
 
 @media screen and (max-width: 640px) {}
+
+/* love */
+
+.love {
+    color: rgb(223, 32, 147);}
