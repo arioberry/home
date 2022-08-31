@@ -64,7 +64,7 @@ table {
 
 /* 見出しのwebフォント */
 
-h1, h2, h3, h4, h5, .menu, .menu2, .type {
+h1, h2, h3, h4, h5, .menu, .menu2, .type, .box3::before {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -206,29 +206,72 @@ body>.body {
     margin-bottom: 15px;
 }
 
+.container_c {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.chara {
+    text-align: center;
+    margin: auto;
+    max-width: 120px;
+}
+
+.chara:hover {
+    filter: brightness(120%) drop-shadow(0px 0px 5px rgba(26, 34, 51, 0.1));
+    transform: translateY(-5px);
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
 /* main */
 
 .box, .system {
     padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(156, 85, 129, 0.2);
+    margin: 1.5em auto;
+    background: rgba(214, 140, 184, 0.2);
     border-radius: 10px;
+}
+
+.box_t {
+    font-size: 110%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .box2 {
     padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(92, 76, 85, 0.2);
+    margin: 1.5em auto;
+    background: rgba(145, 128, 137, 0.2);
     border-radius: 10px;
 }
 
 .box3 {
     padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(156, 85, 129, 0.2);
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    background: rgba(214, 140, 184, 0.2);
     border-radius: 10px;
+    position: relative;
 }
 
+.box3::before {
+    color: rgb(255, 255, 255);
+    content: "一方その頃…";
+    font-weight: bold;
+    font-size: 160%;
+    right: 20px;
+    padding: 3px 8px;
+    position: absolute;
+    top: -20px;
+}
 
 .bg {
     display: block;
@@ -236,7 +279,7 @@ body>.body {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 25px;
-    max-width: 500px;
+    max-width: 80%;
     text-align: center;
 }
 
@@ -326,6 +369,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
 }
 
 h2::before, h2::after {
@@ -438,6 +482,7 @@ h3+.player {
 
 /* ツールチップ */
 
+
 .tooltip {
     border-bottom: dotted 1px #FF0000;
     position: relative;
@@ -465,6 +510,7 @@ h3+.player {
         margin: auto;
         left: -100%;
         right: -100%;
+        top: 20px;
         width: 200px;
         z-index: 5;
     }
