@@ -158,7 +158,7 @@ body>.body {
 
 .menu {
     font-size: 150%;
-    margin: 30px auto;
+    margin: 30px auto 10px auto;
     line-height: 100%;
 }
 
@@ -214,12 +214,12 @@ body>.body {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .chara {
     text-align: center;
-    margin: auto;
+    margin: 0 10px;
     max-width: 120px;
 }
 
@@ -287,8 +287,8 @@ body>.body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     max-width: 100%;
 }
 
