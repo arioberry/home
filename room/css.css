@@ -104,8 +104,8 @@ body>.body {
     }
 
     .logo {
-        margin: 15px auto 20px;
-        max-width: 200px;
+        margin: 15px auto 40px;
+        max-width: 70%;
         max-height: auto;
     }
 
@@ -126,8 +126,8 @@ body>.body {
     }
 
     .logo {
-        margin: 20px auto 30px;
-        max-width: 300px;
+        margin: 20px auto 40px;
+        max-width: 400px;
         max-height: auto;
     }
 
