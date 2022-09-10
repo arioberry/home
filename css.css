@@ -26,7 +26,7 @@ html, body, .body {
 body {
     line-height: 1.2;
     font-size: 0.875rem;
-    color: rgb(39, 38, 38);
+    color: rgb(58, 55, 55);
     background: #ffffff;
 }
 
@@ -92,32 +92,11 @@ body>.body {
     height: auto;
 }
 
-hr {
-    border: 0 none;
-    height: 2px;
-    color: rgb(166, 159, 154);
-    background-color: rgb(166, 159, 154);
-}
+
 
 @media screen and (max-width: 767px) {
     .body {
         padding: 10px 10px 60px;
-    }
-
-    .logo {
-        margin: 15px auto 20px;
-        max-width: 120px;
-        max-height: auto;
-    }
-
-    hr {
-        width: 70%;
-    }
-
-    .type {
-        color: rgb(166, 159, 154);
-        font-size: 90%;
-        margin: 20px auto 20px;
     }
 }
 
@@ -126,21 +105,6 @@ hr {
         padding: 20px 30px 60px;
     }
 
-    .logo {
-        margin: 20px auto 30px;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    hr {
-        width: 50%;
-    }
-
-    .type {
-        color: rgb(166, 159, 154);
-        font-size: 120%;
-        margin: 20px auto 20px;
-    }
 }
 
 .index {
@@ -166,88 +130,9 @@ hr {
 
 /* /index */
 
-.main {
-    display: flex;
-}
 
-.main:not(:last-child) {
-    margin-bottom: 15px;
-}
 
 /* main */
-
-.box, .system {
-    padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(180, 179, 172, 0.2);
-    border-radius: 10px;
-}
-
-.box2 {
-    padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(246, 239, 215, 0.3);
-    border-radius: 10px;
-}
-
-
-@media screen and (max-width: 767px) {
-    .ic {
-        margin-right: 10px;
-    }
-
-    .ic img {
-        max-width: 40px;
-    }
-
-    .box, .system {
-        width: 90%;
-    }
-
-    .box_t {
-        font-size: 110%;
-        margin-bottom: 10px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .box2, .box3, .box4 {
-        width: 90%;
-    }
-
-    .box img, .box2 img, .box3 img, .box4 img {
-        max-width: 30px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .ic {
-        margin-right: 15px;
-    }
-
-    .ic img {
-        max-width: 60px;
-    }
-
-    .box, .system {
-        width: 80%;
-    }
-
-    .box_t {
-        font-size: 110%;
-        margin-bottom: 10px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .box2, .box3, .box4 {
-        width: 80%;
-    }
-
-    .box img, .box2 img, .box3 img, .box4 img {
-        max-width: 40px;
-    }
-}
 
 
 h1 {
@@ -270,7 +155,7 @@ h2:before, h2:after {
     width: 25%;
     height: 1px;
     margin: 0 20px;
-    background-color: rgb(158, 154, 154);
+    background-color: rgb(192, 182, 181);
     vertical-align: middle;
     flex-wrap: nowrap;
 }
@@ -412,18 +297,21 @@ b {
 .title {
     font-size: 80%;
     color: #6f8285;
-
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /* リンク色 */
 
 a:link:not(.list_link):not(.tooltip):not(.page) {
-    color: #78bdc4;
+    color: #5dafb8;
 }
 
 a:visited:not(.list_link):not(.tooltip):not(.page) {
-    color: #78bdc4;
+    color: #5dafb8;
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
