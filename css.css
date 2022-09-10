@@ -41,7 +41,7 @@ body {
     background-image: url(img/bg.png);
     background-repeat: repeat;
     background-size: auto;
-    background-color: #d1d4d6;
+    background-color: #cfdbe0;
 }
 
 ol, ul {
@@ -76,12 +76,12 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type, .name {
 /* index */
 
 .body {
-    background: rgba(22, 17, 17, 0.295);
+    background: rgba(0, 0, 0, 0);
     max-width: 800px;
-    max-height: 100%;
     margin: auto;
     box-sizing: border-box;
     position: relative;
+    text-align: center;
 }
 
 body>.body {
@@ -194,7 +194,7 @@ hr {
 .credit {
     color: rgb(166, 159, 154);
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 /* /index */
@@ -286,7 +286,7 @@ hr {
     text-align: center;
 }
 
-h1 {
+h2 {
     font-size: 200%;
     position: relative;
     padding: 15px 10px;
@@ -295,7 +295,7 @@ h1 {
     text-align: center;
 }
 
-h1:before, h1:after {
+h2:before, h2:after {
     content: "";
     display: inline-block;
     width: 25%;
@@ -306,12 +306,6 @@ h1:before, h1:after {
     flex-wrap: nowrap;
 }
 
-h2 {
-    color: #fff;
-    position: relative;
-    padding: 10px 10px;
-    background-color: rgb(166, 159, 154);
-}
 
 h3 {
     position: relative;
