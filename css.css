@@ -19,10 +19,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
+html, body, .body {
+    height: 100%;
+}
+
 body {
     line-height: 1.2;
     font-size: 0.875rem;
-    color: #fff;
+    color: rgb(39, 38, 38);
     background: #ffffff;
 }
 
@@ -32,10 +36,12 @@ body {
 
 .background {
     width: 100%;
-    background-size: cover;
     height: 100%;
     position: fixed;
-    background: rgb(180, 179, 172);
+    background-image: url(img/bg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-color: #d1d4d6;
 }
 
 ol, ul {
@@ -56,10 +62,13 @@ table {
     border-spacing: 0;
 }
 
+
+
+
 /* 見出しのwebフォント */
 
-h1, h2, h3, h4, h5, .menu, .menu2, .type {
-    font-family: 'Noto Serif JP', serif;
+h1, h2, h3, h4, h5, .menu, .menu2, .type, .name {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* /見出しのwebフォント */
@@ -67,11 +76,16 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 /* index */
 
 .body {
-    background: rgb(43, 44, 40);
+    background: rgba(22, 17, 17, 0.295);
     max-width: 800px;
+    max-height: 100%;
     margin: auto;
     box-sizing: border-box;
     position: relative;
+}
+
+body>.body {
+    height: auto;
 }
 
 hr {
@@ -81,23 +95,23 @@ hr {
     background-color: rgb(166, 159, 154);
 }
 
-.type {
-    color: rgb(166, 159, 154);
-}
-
 @media screen and (max-width: 767px) {
     .body {
         padding: 10px 10px 60px;
     }
+
     .logo {
         margin: 15px auto 20px;
         max-width: 120px;
         max-height: auto;
     }
+
     hr {
         width: 70%;
     }
+
     .type {
+        color: rgb(166, 159, 154);
         font-size: 90%;
         margin: 20px auto 20px;
     }
@@ -107,15 +121,19 @@ hr {
     .body {
         padding: 20px 30px 60px;
     }
+
     .logo {
         margin: 20px auto 30px;
         max-width: 100%;
         max-height: 100%;
     }
+
     hr {
         width: 50%;
     }
+
     .type {
+        color: rgb(166, 159, 154);
         font-size: 120%;
         margin: 20px auto 20px;
     }
@@ -175,7 +193,8 @@ hr {
 
 .credit {
     color: rgb(166, 159, 154);
-    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 /* /index */
@@ -204,26 +223,32 @@ hr {
     border-radius: 10px;
 }
 
+
 @media screen and (max-width: 767px) {
     .ic {
         margin-right: 10px;
     }
+
     .ic img {
         max-width: 40px;
     }
+
     .box, .system {
         width: 90%;
     }
+
     .box_t {
         font-size: 110%;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
-    .box2 {
+
+    .box2, .box3, .box4 {
         width: 90%;
     }
-    .box img, .box2 img {
+
+    .box img, .box2 img, .box3 img, .box4 img {
         max-width: 30px;
     }
 }
@@ -232,22 +257,27 @@ hr {
     .ic {
         margin-right: 15px;
     }
+
     .ic img {
         max-width: 60px;
     }
+
     .box, .system {
         width: 80%;
     }
+
     .box_t {
         font-size: 110%;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
-    .box2 {
+
+    .box2, .box3, .box4 {
         width: 80%;
     }
-    .box img, .box2 img {
+
+    .box img, .box2 img, .box3 img, .box4 img {
         max-width: 40px;
     }
 }
@@ -261,12 +291,23 @@ h1 {
     position: relative;
     padding: 15px 10px;
     margin: 10px auto;
-    color: rgb(255, 255, 255);
+    color: rgb(39, 38, 38);
     text-align: center;
 }
 
+h1:before, h1:after {
+    content: "";
+    display: inline-block;
+    width: 25%;
+    height: 1px;
+    margin: 0 20px;
+    background-color: rgb(158, 154, 154);
+    vertical-align: middle;
+    flex-wrap: nowrap;
+}
+
 h2 {
-    color: rgb(43, 44, 40);
+    color: #fff;
     position: relative;
     padding: 10px 10px;
     background-color: rgb(166, 159, 154);
@@ -284,7 +325,7 @@ h3 {
 .player {
     border-left: 6px double rgba(166, 159, 154, 0.5);
     padding: 5px 10px;
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 15px;
 }
 
@@ -293,9 +334,11 @@ h3 {
         font-size: 140%;
         margin: 15px auto;
     }
+
     h3 {
         font-size: 120%;
     }
+
     .player {
         font-size: 110%;
     }
@@ -306,9 +349,11 @@ h3 {
         font-size: 200%;
         margin: 15px auto;
     }
+
     h3 {
         font-size: 160%;
     }
+
     .player {
         font-size: 120%;
     }
@@ -351,18 +396,10 @@ h3+.player {
     margin-bottom: 20px;
 }
 
-.fail {
-    color: #FF0000;
-}
-
-.success {
-    color: #10addd;
-}
-
 /* ツールチップ */
 
 .tooltip {
-    border-bottom: dotted 1px #FF0000;
+    font-weight: bold;
     position: relative;
 }
 
@@ -406,18 +443,22 @@ h3+.player {
         transition: all.2s;
         z-index: 30
     }
+
     .tooltip:hover .tooltip-text {
         bottom: 0;
     }
+
     .tooltip:hover:after {
         display: block;
     }
+
     .tooltip-text:after {
         display: block;
         position: fixed;
         background: rgba(0, 0, 0, 0.2);
         content: "";
     }
+
     .tooltip:after {
         background: rgba(0, 0, 0, 0.2);
         content: "";
@@ -459,6 +500,32 @@ b {
     font-weight: bold;
 }
 
+/* キャラ紹介 */
+.container_c {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.chara {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.name {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.charaimg {
+    max-width: 120px;
+    margin: 5px 25px;
+}
+
+
+
 /* リンク色 */
 
 a:link:not(.list_link):not(.tooltip):not(.page) {
@@ -493,21 +560,7 @@ a:hover.page {
 
 /* /フッターのリンク色 */
 
-/* name */
 
-.gm {
-    color: #888888;
-}
-
-.pc1 {
-    color: #795548;
-}
-
-.pc2 {
-    color: #ccbfb8;
-}
-
-/* /name */
 
 @media screen and (min-width: 641px) {}
 
