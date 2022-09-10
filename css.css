@@ -41,7 +41,7 @@ body {
     background-image: url(img/bg.png);
     background-repeat: repeat;
     background-size: auto;
-    background-color: #cfdbe0;
+    background-color: #f5f6ee;
 }
 
 ol, ul {
@@ -67,7 +67,11 @@ table {
 
 /* 見出しのwebフォント */
 
-h1, h2, h3, h4, h5, .menu, .menu2, .type, .name {
+h1 {
+    font-family: 'Rock Salt', cursive;
+}
+
+h2, h3, h4, h5, .menu, .menu2, .type, .name {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -76,7 +80,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type, .name {
 /* index */
 
 .body {
-    background: rgba(0, 0, 0, 0);
+    background: #f5f6ee;
     max-width: 800px;
     margin: auto;
     box-sizing: border-box;
@@ -284,6 +288,10 @@ hr {
 
 .prot {
     text-align: center;
+}
+
+h1 {
+    font-size: 250%;
 }
 
 h2 {
@@ -518,6 +526,9 @@ b {
     margin: 5px 25px;
 }
 
+.title {
+    font-size: 80%;
+}
 
 
 /* リンク色 */
