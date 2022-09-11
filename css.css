@@ -172,26 +172,11 @@ h3 {
 
 
 @media screen and (max-width: 767px) {
-    h2 {
-        font-size: 140%;
-        margin: 15px auto;
-    }
 
-    h3 {
-        font-size: 120%;
-    }
 
 }
 
 @media screen and (min-width: 768px) {
-    h2 {
-        font-size: 200%;
-        margin: 15px auto;
-    }
-
-    h3 {
-        font-size: 160%;
-    }
 
 
 }
