@@ -94,13 +94,32 @@ h2, h3, h4, h5, .menu, .menu2, .type, .name, .data {
     position: relative;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 body>.body {
     height: auto;
 }
 
+.left {
+    margin: 0;
+    position: relative;
+}
 
+.right {
+    padding-top: 0px;
+    width: 50%;
+    position: relative;
+    left: -10%;
+}
+
+.back {
+    position: absolute;
+    left: 5%;
+    top: 20px;
+}
 
 @media screen and (max-width: 767px) {
     .body {
@@ -110,7 +129,7 @@ body>.body {
 
 @media screen and (min-width: 768px) {
     .body {
-        padding: 20px 30px 60px;
+        padding: 20px;
     }
 
 }
@@ -148,6 +167,7 @@ rt {
 h3 {
     font-size: 120%;
     text-align: center;
+    flex-wrap: nowrap;
 }
 
 .data {
@@ -180,26 +200,6 @@ h3 {
     width: 90%;
 }
 
-.left {
-    margin: 0;
-    position: relative;
-    top: 10px;
-    left: 10%;
-}
-
-.right {
-    padding-top: 40px;
-    width: 50%;
-    position: relative;
-    top: 10px;
-    left: 0%;
-}
-
-
-h2+h3 {
-    margin-top: -5px;
-}
-
 
 
 
@@ -228,37 +228,6 @@ b {
     font-weight: bold;
 }
 
-/* キャラ紹介 */
-.container_c {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-}
-
-.chara {
-    text-align: center;
-    margin: 20px 0px;
-}
-
-.name {
-    font-size: 18px;
-    margin-bottom: 5px;
-    margin-top: 3px;
-}
-
-.charaimg {
-    max-width: 120px;
-    margin: 2px 25px;
-}
-
-.title {
-    font-size: 80%;
-    color: #6f8285;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-}
 
 
 /* リンク色 */
