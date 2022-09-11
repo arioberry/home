@@ -136,30 +136,25 @@ body>.body {
 
 
 h1 {
-    font-size: 350%;
     margin-top: 20px;
     margin-bottom: 70px;
 }
 
-h2 {
-    font-size: 200%;
-    position: relative;
-    padding: auto;
-    margin: 10px auto;
-    text-align: center;
-}
 
-h2:before, h2:after {
-    content: "";
-    display: inline-block;
-    width: 25%;
-    height: 1px;
-    margin: 0 20px;
-    background-color: rgb(192, 182, 181);
-    vertical-align: middle;
-    flex-wrap: nowrap;
-}
+    h2 {
+        position: relative;
+        padding: auto;
+        margin: 10px auto;
+        text-align: center;
+    }
 
+    h2:before, h2:after {
+        content: "";
+        display: inline-block;
+        background-color: rgb(192, 182, 181);
+        vertical-align: middle;
+        flex-wrap: nowrap;
+    }
 
 h3 {
     position: relative;
@@ -172,13 +167,35 @@ h3 {
 
 
 @media screen and (max-width: 767px) {
+    h1 {
+        font-size: 300%;
+    }
 
+    h2 {
+        font-size: 180%;
+    }
 
+    h2:before, h2:after {
+        width: 15%;
+        height: 1px;
+        margin: 0 20px;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 350%;
+    }
 
+    h2 {
+        font-size: 200%;
+    }
 
+    h2:before, h2:after {
+        width: 25%;
+        height: 1px;
+        margin: 0 20px;
+    }
 }
 
 
