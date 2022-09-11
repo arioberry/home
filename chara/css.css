@@ -24,10 +24,12 @@ html, body, .body {
 }
 
 body {
-    line-height: 1.2;
+    line-height: 1.4;
     font-size: 0.875rem;
     color: rgb(58, 55, 55);
     background: #ffffff;
+    display: flex;
+    position: relative;
 }
 
 .p {
@@ -71,8 +73,12 @@ h1 {
     font-family: 'Rock Salt', cursive;
 }
 
-h2, h3, h4, h5, .menu, .menu2, .type, .name {
+h2, h3, h4, h5, .menu, .menu2, .type, .name, .data {
     font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.serif {
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 /* /見出しのwebフォント */
@@ -81,11 +87,13 @@ h2, h3, h4, h5, .menu, .menu2, .type, .name {
 
 .body {
     background: #f5f6ee;
-    max-width: 800px;
+    width: 100%;
+    height: 80%;
     margin: auto;
     box-sizing: border-box;
     position: relative;
     text-align: center;
+    display: flex;
 }
 
 body>.body {
@@ -107,26 +115,7 @@ body>.body {
 
 }
 
-.index {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-.index .body {
-    min-width: 70vw;
-    width: 100%;
-    text-align: center;
-    padding: 40px 15px;
-}
-
-
-.credit {
-    color: rgb(166, 159, 154);
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
 
 /* /index */
 
@@ -142,107 +131,69 @@ h1 {
 }
 
 h2 {
-    font-size: 200%;
+    font-size: 300%;
+    font-weight: 700;
     position: relative;
     padding: auto;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
-h2:before, h2:after {
-    content: "";
-    display: inline-block;
-    width: 25%;
-    height: 1px;
-    margin: 0 20px;
-    background-color: rgb(192, 182, 181);
-    vertical-align: middle;
-    flex-wrap: nowrap;
+rt {
+    font-size: 30%;
+    text-align: center;
 }
-
 
 h3 {
-    position: relative;
-    padding: 5px 10px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background: rgba(166, 159, 154, 0.5);
+    font-size: 120%;
+    text-align: center;
 }
 
-.player {
-    border-left: 6px double rgba(166, 159, 154, 0.5);
-    padding: 5px 10px;
-    margin-top: 0;
-    margin-bottom: 15px;
+.data {
+    margin: 20px auto;
+    padding: 20px 20px;
+    max-width: 450px;
+    color: rgb(114, 107, 107);
+    background-color: rgba(211, 166, 135, 0.15);
+    border-radius: 15px;
 }
 
-@media screen and (max-width: 767px) {
-    h2 {
-        font-size: 140%;
-        margin: 15px auto;
-    }
-
-    h3 {
-        font-size: 120%;
-    }
-
-    .player {
-        font-size: 110%;
-    }
+.data>b {
+    color: rgb(170, 133, 131);
+    flex-wrap: nowrap;
+    font-weight: normal;
 }
 
-@media screen and (min-width: 768px) {
-    h2 {
-        font-size: 200%;
-        margin: 15px auto;
-    }
-
-    h3 {
-        font-size: 160%;
-    }
-
-    .player {
-        font-size: 120%;
-    }
+.serif {
+    font-style: italic;
+    margin: 30px auto;
+    font-size: 120%;
 }
+
+.txt {
+    margin-top: 30px;
+}
+
+.image {
+    width: 90%;
+}
+
+.left {
+    margin: 0;
+}
+
+.right {
+    padding-top: 40px;
+    width: 50%;
+}
+
 
 h2+h3 {
     margin-top: -5px;
 }
 
-.footer+h3 {
-    margin-top: 0px;
-}
 
-h3+.player {
-    margin-top: -10px;
-}
-
-.footer {
-    position: fixed;
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 5px;
-    padding-bottom: 25px;
-    background: rgb(246, 239, 215);
-    display: flex;
-    justify-content: space-around;
-    z-index: 10;
-}
-
-.cutin {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: 0 25%;
-    margin-bottom: 20px;
-}
 
 
 /* /main */
@@ -306,17 +257,30 @@ b {
 
 /* リンク色 */
 
-a:link:not(.list_link):not(.tooltip):not(.page) {
+a:link:not(.list_link):not(.h2):not(.page) {
     color: #5dafb8;
 }
 
-a:visited:not(.list_link):not(.tooltip):not(.page) {
+a:visited:not(.list_link):not(.h2):not(.page) {
     color: #5dafb8;
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
     color: #c78170;
     transition: color 0.5s
+}
+
+a:link.h2 {
+    color: rgb(58, 55, 55);
+}
+
+a:visited.h2 {
+    color: rgb(58, 55, 55);
+}
+
+.h2 {
+    text-decoration: none;
+    border-bottom: 2px dashed #5dafb8;
 }
 
 /* /リンク色 */
