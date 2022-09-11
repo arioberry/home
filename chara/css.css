@@ -169,6 +169,7 @@ h3 {
     font-style: italic;
     margin: 30px auto;
     font-size: 120%;
+    line-height: 1.8;
 }
 
 .txt {
@@ -248,8 +249,7 @@ b {
 .title {
     font-size: 80%;
     color: #6f8285;
-    height: 25px;
-    display: flex;
+    height: 30px;
     align-items: center;
     justify-content: center;
 }
