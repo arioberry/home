@@ -96,6 +96,7 @@ h2, h3, h4, h5, .menu, .menu2, .type, .name, .data, .back {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 body>.body {
@@ -108,7 +109,6 @@ body>.body {
 }
 
 .right {
-    text-align: center;
     padding-top: 0px;
     width: 50%;
     position: relative;
