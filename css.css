@@ -178,7 +178,7 @@ h3 {
     h2:before, h2:after {
         width: 15%;
         height: 1px;
-        margin: 0 20px;
+        margin: 0 10px;
     }
 }
 
@@ -280,23 +280,6 @@ a:visited.h2 {
 }
 
 /* /リンク色 */
-
-/* フッターのリンク色を変える場合は以下を編集 */
-
-a:link.page {
-    color: rgb(63, 64, 59);
-}
-
-a:visited.page {
-    color: rgb(63, 64, 59);
-}
-
-a:hover.page {
-    color: rgb(166, 159, 154);
-    transition: color 0.5s
-}
-
-/* /フッターのリンク色 */
 
 
 

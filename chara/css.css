@@ -73,7 +73,7 @@ h1 {
     font-family: 'Rock Salt', cursive;
 }
 
-h2, h3, h4, h5, .menu, .menu2, .type, .name, .data {
+h2, h3, h4, h5, .menu, .menu2, .type, .name, .data, .back {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -92,7 +92,6 @@ h2, h3, h4, h5, .menu, .menu2, .type, .name, .data {
     margin: auto;
     box-sizing: border-box;
     position: relative;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -109,20 +108,26 @@ body>.body {
 }
 
 .right {
+    text-align: center;
     padding-top: 0px;
     width: 50%;
     position: relative;
 }
 
 .back {
+    font-size: 150%;
     position: absolute;
     left: 5%;
     top: 20px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
+    .right {
+        width: 80%;
+    }
     .body {
-        padding: 10px 10px 60px;
+        padding: 40px 0;
     }
 }
 
@@ -259,22 +264,7 @@ a:visited.h2 {
 
 /* /リンク色 */
 
-/* フッターのリンク色を変える場合は以下を編集 */
 
-a:link.page {
-    color: rgb(63, 64, 59);
-}
-
-a:visited.page {
-    color: rgb(63, 64, 59);
-}
-
-a:hover.page {
-    color: rgb(166, 159, 154);
-    transition: color 0.5s
-}
-
-/* /フッターのリンク色 */
 
 
 
