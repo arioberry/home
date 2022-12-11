@@ -391,6 +391,14 @@ h3+.player {
     margin-bottom: 20px;
 }
 
+.fail {
+    color: #FF0000;
+}
+
+.success {
+    color: #10addd;
+}
+
 /* ツールチップ */
 
 .tooltip {
