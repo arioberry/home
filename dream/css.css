@@ -39,8 +39,8 @@ body {
     height: 100%;
     position: fixed;
     background-image: url(img/bg.png);
-    background-repeat: repeat;
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #5c3862;
 }
 
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type, .box3::before {
 /* index */
 
 .body {
-    background: rgba(17, 15, 16, 0.9);
+    background: rgba(17, 15, 16, 0.6);
     max-width: 800px;
     min-height: 100%;
     margin: auto;
@@ -105,7 +105,7 @@ body>.body {
 
     .logo {
         margin: 15px auto 40px;
-        max-width: 70%;
+        max-width: 80%;
         max-height: auto;
     }
 
@@ -127,7 +127,7 @@ body>.body {
 
     .logo {
         margin: 20px auto 40px;
-        max-width: 400px;
+        max-width: 500px;
         max-height: auto;
     }
 
@@ -186,7 +186,7 @@ body>.body {
 }
 
 .list_link:hover {
-    color: rgb(226, 54, 105);
+    color: rgb(249, 100, 194);
     font-size: 110%;
     transition: 0.3s;
 }
@@ -242,7 +242,7 @@ body>.body {
 .box, .system {
     padding: 10px 10px;
     margin: 1.5em auto;
-    background: rgba(214, 140, 184, 0.2);
+    background: rgba(209, 187, 200, 0.2);
     border-radius: 10px;
 }
 
@@ -383,7 +383,7 @@ h2::before, h2::after {
     content: "";
     width: 20%;
     height: 8px;
-    background-image: repeating-linear-gradient(-45deg, rgb(226, 54, 105) 0, rgb(226, 54, 105) 1px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%);
+    background-image: repeating-linear-gradient(-45deg, rgb(180, 128, 182) 0, rgb(180, 128, 182) 1px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%);
     background-size: 8px 8px;
     flex-grow: 1;
 }
@@ -402,11 +402,11 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background: rgb(226, 54, 105);
+    background: rgb(180, 128, 182);
 }
 
 .player {
-    border-left: 6px double rgb(226, 54, 105);
+    border-left: 6px double rgb(180, 128, 182);
     padding: 5px 10px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -465,7 +465,7 @@ h3+.player {
     padding-right: 20%;
     padding-top: 5px;
     padding-bottom: 25px;
-    background: rgb(226, 54, 105);
+    background: rgb(228, 113, 180);
     display: flex;
     justify-content: space-around;
     z-index: 10;
@@ -595,12 +595,8 @@ b {
 
 /* リンク色 */
 
-a:link:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(245, 113, 153);
-}
-
-a:visited:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(224, 100, 137);
+a:link:not(.list_link):not(.tooltip):not(.page),a:visited:not(.list_link):not(.tooltip):not(.page) {
+    color: rgb(249, 100, 194);
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
@@ -632,7 +628,7 @@ a:hover.page {
 /* name */
 
 .gm {
-    color: #888888;
+    color: #b4b4b4;
 }
 
 .sara {
