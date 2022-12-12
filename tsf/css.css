@@ -19,11 +19,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
+html, body, .body {
+    height: 100%;
+}
+
 body {
     line-height: 1.2;
-    font-size: 0.875rem;
+    font-size: 0.95rem;
     color: #fff;
-    background: #ffffff;
+    background: rgb(26, 26, 26);
 }
 
 .p {
@@ -32,12 +36,20 @@ body {
 
 .background {
     width: 100%;
-    background-size: cover;
     height: 100%;
     position: fixed;
-    background: rgb(180, 179, 172);
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-color: #000000;
 }
-
+.background2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-color: #000000;
+}
 ol, ul {
     padding: 10px;
 }
@@ -56,22 +68,10 @@ table {
     border-spacing: 0;
 }
 
-
-.fail {
-    color: #FF0000;
-}
-
-.success {
-    color: #10addd;
-}
-
-
-
-
 /* 見出しのwebフォント */
 
-h1, h2, h3, h4, h5, .menu, .menu2, .type {
-    font-family: 'Noto Serif JP', serif;
+h1, h2, h3, h4, h5, .menu, .menu2, .type, .box3::before {
+    font-family: 'Hina Mincho', serif;
 }
 
 /* /見出しのwebフォント */
@@ -79,32 +79,46 @@ h1, h2, h3, h4, h5, .menu, .menu2, .type {
 /* index */
 
 .body {
-    background: rgb(43, 44, 40);
+    background: rgba(17, 15, 16, 0.9);
     max-width: 800px;
+    min-height: 100%;
     margin: auto;
     box-sizing: border-box;
     position: relative;
 }
 
-hr {
-    border: 0 none;
-    height: 2px;
-    color: rgb(166, 159, 154);
-    background-color: rgb(166, 159, 154);
+body>.body {
+    height: auto;
+}
+
+.hr {
+    background-image: linear-gradient(to right, #91878d, #91878d 5px, transparent 5px, transparent 8px);
+    /* 幅2の線を作る */
+    background-size: 14px 2px;
+    /* グラデーションの幅・高さを指定 */
+    background-position: left bottom;
+    /* 背景の開始位置を指定 */
+    background-repeat: repeat-x;
+    /* 横向きにのみ繰り返す */
+    max-width: 70%;
+    margin: auto;
 }
 
 @media screen and (max-width: 767px) {
     .body {
         padding: 10px 10px 60px;
     }
+
     .logo {
-        margin: 15px auto 20px;
-        max-width: 120px;
+        margin: 15px auto 40px;
+        max-width: 100px;
         max-height: auto;
     }
+
     hr {
         width: 70%;
     }
+
     .type {
         color: rgb(166, 159, 154);
         font-size: 90%;
@@ -116,14 +130,17 @@ hr {
     .body {
         padding: 20px 30px 60px;
     }
+
     .logo {
-        margin: 20px auto 30px;
-        max-width: 100%;
-        max-height: 100%;
+        margin: 20px auto 40px;
+        max-width: 100px;
+        max-height: auto;
     }
+
     hr {
         width: 50%;
     }
+
     .type {
         color: rgb(166, 159, 154);
         font-size: 120%;
@@ -147,7 +164,7 @@ hr {
 
 .menu {
     font-size: 150%;
-    margin: 30px auto;
+    margin: 30px auto 10px auto;
     line-height: 100%;
 }
 
@@ -167,20 +184,17 @@ hr {
 }
 
 .list_link {
-    background-color: rgba(166, 159, 154, 0.5);
     color: #fff;
     text-decoration: none;
     display: block;
-    margin: -10px 5px 10px;
-    padding: 0.4rem 0.3rem;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    margin: 8px 0px;
+    padding: 0.2rem 0.2rem;
 }
 
 .list_link:hover {
-    background-color: rgb(180, 179, 172);
+    color: #D9A407;
+    font-size: 110%;
+    transition: 0.3s;
 }
 
 .credit {
@@ -198,41 +212,117 @@ hr {
     margin-bottom: 15px;
 }
 
+.container_c {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    flex-wrap: nowrap;
+}
+
+.chara {
+    text-align: center;
+    margin: 0 10px;
+    max-width: 120px;
+}
+
+.chara:hover {
+    filter: brightness(120%) drop-shadow(0px 0px 5px rgba(26, 34, 51, 0.1));
+    transform: translateY(-5px);
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
 /* main */
 
 .box, .system {
     padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(180, 179, 172, 0.2);
+    margin: 1.5em auto;
+    background: rgba(109, 151, 151, 0.2);
     border-radius: 10px;
+}
+
+.box_t {
+    font-size: 110%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .box2 {
     padding: 10px 10px;
-    margin: 1.0em auto;
-    background: rgba(246, 239, 215, 0.3);
+    margin: 1.5em auto;
+    background: rgba(145, 128, 137, 0.2);
     border-radius: 10px;
+}
+
+.box3 {
+    padding: 10px 10px;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    background: rgba(214, 140, 184, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+.box3::before {
+    color: rgb(255, 255, 255);
+    content: "一方その頃…";
+    font-weight: bold;
+    font-size: 160%;
+    right: 20px;
+    padding: 3px 8px;
+    position: absolute;
+    top: -20px;
+}
+
+.bg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 767px) {
     .ic {
         margin-right: 10px;
     }
+
+
     .ic img {
         max-width: 40px;
     }
+
     .box, .system {
         width: 90%;
     }
+
     .box_t {
         font-size: 110%;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
+
     .box2 {
         width: 90%;
     }
+
     .box img, .box2 img {
         max-width: 30px;
     }
@@ -242,21 +332,26 @@ hr {
     .ic {
         margin-right: 15px;
     }
+
     .ic img {
         max-width: 60px;
     }
+
     .box, .system {
         width: 80%;
     }
+
     .box_t {
         font-size: 110%;
         margin-bottom: 10px;
         text-align: center;
         font-weight: bold;
     }
+
     .box2 {
         width: 80%;
     }
+
     .box img, .box2 img {
         max-width: 40px;
     }
@@ -277,9 +372,27 @@ h1 {
 
 h2 {
     color: #fff;
-    position: relative;
-    padding: 10px 10px;
-    background-color: rgb(166, 159, 154);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+h2::before, h2::after {
+    content: "";
+    width: 20%;
+    height: 8px;
+    background-image: repeating-linear-gradient(-45deg, rgb(7, 115, 115) 0, rgb(7, 115, 115) 1px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%);
+    background-size: 8px 8px;
+    flex-grow: 1;
+}
+
+h2::before {
+    margin-right: 30px;
+}
+
+h2::after {
+    margin-left: 30px;
 }
 
 h3 {
@@ -288,11 +401,11 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background: rgba(166, 159, 154, 0.5);
+    background: rgb(7, 115, 115);
 }
 
 .player {
-    border-left: 6px double rgba(166, 159, 154, 0.5);
+    border-left: 6px double rgb(7, 115, 115);
     padding: 5px 10px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -303,9 +416,11 @@ h3 {
         font-size: 140%;
         margin: 15px auto;
     }
+
     h3 {
         font-size: 120%;
     }
+
     .player {
         font-size: 110%;
     }
@@ -313,12 +428,14 @@ h3 {
 
 @media screen and (min-width: 768px) {
     h2 {
-        font-size: 200%;
-        margin: 15px auto;
+        font-size: 180%;
+        margin: 30px auto;
     }
+
     h3 {
-        font-size: 160%;
+        font-size: 140%;
     }
+
     .player {
         font-size: 120%;
     }
@@ -347,7 +464,7 @@ h3+.player {
     padding-right: 20%;
     padding-top: 5px;
     padding-bottom: 25px;
-    background: rgb(246, 239, 215);
+    background: #077373;
     display: flex;
     justify-content: space-around;
     z-index: 10;
@@ -361,7 +478,16 @@ h3+.player {
     margin-bottom: 20px;
 }
 
+.fail {
+    color: #FF0000;
+}
+
+.success {
+    color: #10addd;
+}
+
 /* ツールチップ */
+
 
 .tooltip {
     border-bottom: dotted 1px #FF0000;
@@ -390,6 +516,7 @@ h3+.player {
         margin: auto;
         left: -100%;
         right: -100%;
+        top: 20px;
         width: 200px;
         z-index: 5;
     }
@@ -408,18 +535,22 @@ h3+.player {
         transition: all.2s;
         z-index: 30
     }
+
     .tooltip:hover .tooltip-text {
         bottom: 0;
     }
+
     .tooltip:hover:after {
         display: block;
     }
+
     .tooltip-text:after {
         display: block;
         position: fixed;
         background: rgba(0, 0, 0, 0.2);
         content: "";
     }
+
     .tooltip:after {
         background: rgba(0, 0, 0, 0.2);
         content: "";
@@ -463,39 +594,38 @@ b {
 
 /* リンク色 */
 
-a:link:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(166, 159, 154);
-}
-
-a:visited:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(166, 159, 154);
+a:link:not(.list_link):not(.tooltip):not(.page),a:visited:not(.list_link):not(.tooltip):not(.page) {
+    color: rgb(166, 117, 27);
 }
 
 a:hover:not(.list_link):not(.tooltip):not(.page) {
-    color: rgb(246, 239, 215);
+    color: rgb(217, 164, 7);
     transition: color 0.5s
 }
+
+
 
 /* /リンク色 */
 
 /* フッターのリンク色を変える場合は以下を編集 */
 
 a:link.page {
-    color: rgb(63, 64, 59);
+    color: rgb(255, 255, 255);
 }
 
 a:visited.page {
-    color: rgb(63, 64, 59);
+    color: rgb(255, 255, 255);
 }
 
 a:hover.page {
-    color: rgb(166, 159, 154);
+    color: rgb(217, 164, 7);
     transition: color 0.5s
 }
 
 /* /フッターのリンク色 */
 
 /* name */
+
 
 .gm {
     color: #888888;
@@ -511,7 +641,7 @@ a:hover.page {
 
 .pc3 {
 	color: rgb(128, 171, 169)
-
+}
 
 .pc4 {
 	color: rgb(0, 150, 136)
@@ -524,6 +654,3 @@ a:hover.page {
 
 
 /* love */
-
-.love {
-    color: rgb(223, 32, 147);}
